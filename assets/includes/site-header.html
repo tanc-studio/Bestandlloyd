@@ -1,0 +1,84 @@
+<div class="icon-page" w3-include-html="svg-files.html"></div>
+<header class="header">
+
+   <!-- Header Top -->
+   <div class="header__top">
+      <div class="header-wrap">
+         <div class="header__links">
+            <button class="header__link btn--hide" onclick="document.getElementById('modalLogin').style.display='block'">Clients</button>
+            <a class="header__link header--register view--fullscreen" href="register.html">Register</a>
+         </div>
+         <div class="header__logo">
+            <a href="index.html">
+               <img id="logoShrink" src="assets/svg/bestandlloyd.png" alt="Best&Lloyd Logo">
+            </a>
+         </div>
+         <div class="header__links ">
+            <a class="header__link header--findus view--fullscreen" href="findus.html">Find Us</a>
+            <button class="header__link btn--hide" onclick="document.getElementById('modalSearch').style.display='block'">Search</button>
+         </div>
+      </div>
+   </div>
+
+   <!-- Navbar -->
+   <div  class="navbar">
+   <!-- Navbar left-->
+      <div class="navbar__left" style="opacity: 0;">
+         <svg class="icon"><use href="#icon-search" xlink:href="#icon-search"></use></svg>
+      </div>
+      <nav class="menu">
+         <!-- Burger -->
+         <div class="menu__burger">
+            <input type="checkbox" class="toggler">
+            <div class="burger"><div></div></div>
+         </div>
+         <!-- Menu -->
+         <ul class="menu__list">
+            <!-- <hr class="content--mobile"> -->
+            <li class="menu__item"><a class="menu__link" href="#">Products</a>
+               <ul class="menu__sub-list">
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="product-page.html">New</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="all.html">All</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="table.html">Table</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="wall.html">Wall</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="floor.html">Floor</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="pendant.html">Pendant</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="outdoor.html">Outdoor</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="tablesmirrors.html">Tables &amp; Mirrors</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="accessories.html">Accessories</a></li>
+               </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Discover</a>
+               <ul class="menu__sub-list">
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="heritage.html">Heritage</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="ethos.html">Ethos</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="designers.html">Designers</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="info.html">Info</a></li>
+               </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Custom</a>
+               <ul class="menu__sub-list">
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="custom.html">Custom</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="custom.html#pg-finishes">Finishes</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="shades.html">Shades</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="schemeboard.html">Schemeboard</a></li>
+               </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Latest</a>
+               <ul class="menu__sub-list">
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="news.html">Latest</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="client-area.html">Clients</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="brochures.html">Brochure</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="mailing.html">Mailing List</a></li>
+               </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="findus.html#showrooms">Showrooms</a></li>
+         </ul>
+      </nav>
+      <div class="navbar__right">
+         <svg class="icon" onclick="document.getElementById('modalSearch').style.display='block'">
+            <use href="#icon-search" xlink:href="#icon-search"></use>
+         </svg>
+      </div>
+   </div>
+</header>
