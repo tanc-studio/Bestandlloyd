@@ -4,8 +4,9 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700|Work+Sans:200,300,400,500,600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/optima.css">
       <link rel="stylesheet" href="css/base.css">
       <link rel="stylesheet" href="css/components.css">
       <link rel="stylesheet" href="css/layout.css">
@@ -18,378 +19,242 @@
       <title>Best&amp;Lloyd</title>
    </head>
 <body>
+   <div class="svg-page" style="display:none;" w3-include-html="svg-files.html"></div>
+   <!-- Header -->
+   <div class="site-header" w3-include-html="includes/site-header.html"></div>
+   <!-- Scroll to top -->
+   <div id="back2Top"><svg class="icon"><use href="#icon-up" xlink:href="#icon-up"></use></svg></div>
+   <!-- Main Start-->
+   <main class="main">
 
-<!-- SVG Files -->
-<div class="icon-page" w3-include-html="svg-files.html"></div>
+   <article>
+      <h1 class="page__heading">Designers <span class="linebreak">&amp; Artists</span></h1>
 
-<!-- Header
-------------------------------------------------------------------------------->
-<header class="header">
-   <div class="header__top">
-      <div class="header-wrap">
-         <div class="header__links header__links--left">
-            <button class="header--login btn--hide a-gold" onclick="document.getElementById('modalLogin').style.display='block'">Clients</button>
-            <a class="header__register content--fullscreen a-gold" href="register.html">Register</a>
-         </div>
-         <div class="header__logo">
-            <a href="index.html">
-               <img id="logoShrink" src="assets/svg/bestandlloyd.png" alt="Best&Lloyd Logo">
-            </a>
-         </div>
-         <div class="header__links header__links--right">
-            <a class="header__findus content--fullscreen a-gold" href="#">Find Us</a>
-            <button class="header--search btn--hide a-gold" onclick="document.getElementById('modalSearch').style.display='block'">Search</button>
-         </div>
-      </div>
-   </div>
-
-<!-- Navbar
-------------------------------------------------------------------------------->
-   <div  class="navbar">
-      <div class="navbar__left" style="opacity: 0;">
-      </div>
-      <nav class="menu">
-         <div class="menu__burger">
-            <input type="checkbox" class="toggler">
-            <div class="burger"><div></div></div>
-         </div>
-         <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="#">Products</a>
-               <ul class="menu__sub-list">
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="client-area.html">Clients</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="new.html">New</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="table.html">Table</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="wall.html">Wall</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="floor.html">Floor</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="pendant.html">Pendant</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="outdoor.html">Outdoor</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="tablesmirrors.html">Tables &amp; Mirrors</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="collections.html">Collections</a></li>
-               </ul>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="#">Discover</a>
-               <ul class="menu__sub-list">
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="heritage.html">Heritage</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="ethos.html">Ethos</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="designers.html">Designers</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="info.html">Info</a></li>
-               </ul>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="#">Custom</a>
-               <ul class="menu__sub-list">
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="custom.html">Custom</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="custom.html#finishes">Finishes</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="shades.html">Shades</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="schemeboard.html">Schemeboard</a></li>
-               </ul>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="#">Latest</a>
-               <ul class="menu__sub-list">
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="news.html">Latest</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="press.html">Press</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="brochures.html">Brochure</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="mailing.html">Mailing List</a></li>
-               </ul>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="findus.html">Showrooms</a></li>
-         </ul>
-      </nav>
-      <div class="navbar__right">
-         <svg class="icon" onclick="document.getElementById('modalSearch').style.display='block'">
-            <use href="#icon-search" xlink:href="#icon-search"></use>
-         </svg>
-      </div>
-   </div>
-
-<!-- Search/Login
-------------------------------------------------------------------------------->
-   <div id="modalLogin" class="modal-bg">
-      <div class="modal--login">
-         <div class="modal__close" onclick="document.getElementById('modalLogin').style.display='none'">
-            <svg class="icon icon--gold"><use href="#icon-close" xlink:href="#icon-close"></use></svg>
-         </div>
-         <form class="form form--dark" action="*">
-            <label class="form__label" for="uname">Username</label>
-            <input class="form__input" type="text" placeholder="Enter Username" name="uname" required>
-            <label class="form__label" for="psw">Password</label>
-            <input class="form__input" type="password" placeholder="Enter Password" name="psw" required>
-            <button class="btn btn--form" type="submit">Login</button>
-            <label class="form__checkbox">
-              <input type="checkbox" style="margin-top: 1.5rem;" checked="checked" name="remember">
-              <p class="form__checkbox__txt">Remember me</p>
-            </label>
-         </form>
-      </div>
-   </div>
-   <div id="modalSearch" class="modal-bg">
-      <div class="modal--search">
-         <div class="modal__close" onclick="document.getElementById('modalSearch').style.display='none'" title="Close Modal">
-            <svg class="icon icon--gold"><use href="#icon-close" xlink:href="#icon-close"></use></svg>
-         </div>
-         <form class="form form--dark" action="*">
-            <label class="form__label" for="psw">Search</label>
-            <div class="form__searchbox">
-               <input class="form__input form__input--inline" type="text" placeholder="Search" name="search">
-               <button class="btn btn--form" type="submit" style="padding: .5rem;">
-                  <svg class="icon"><use href="#icon-search" xlink:href="#icon-search"></use></svg>
-               </button>
+      <div class="cards cards--designers wrap--md">
+         <!-- Adrien Bonaventure -->
+         <section class="card">
+            <img class="card__img card__img--sm img--border" src="assets/images/bl_Designers_Bonaventure.jpg" alt="Best&Lloyd Designer Adrien Bonaventure">
+            <div class="card__info">
+               <h3 class="card__title sub-heading">Adrien Bonaventure</h3>
+               <p class="card__text text">Adrien entered the world of design as assistant to Lord Reilly, founding director of the Design Council in London.
+                  He was strongly influenced by his Italian architect stepfather, who worked with Frank Lloyd Wright and who provided
+                  his first lighting prototypes for the Adrien Bonaventure Collection with the Arc light. Adrien’s lamps were
+                  introduced to the public at Pierre Frey in London. They quickly received a following among interior designers and
+                  have been described as “the height of ambient elegance”. In 2004, the collection was merged into Best&Lloyd with
+                  designs that have won awards for exceptional beauty in their simplicity and workmanship. The collection won the
+                  BIDA outstanding product awards in 2004 to 2008.</p>
             </div>
-         </form>
-      </div>
-   </div>
-</header>
+         </section>
 
+         <!-- Antony Critchlow -->
+         <section class="card card--reverse">
+            <img class="card__img card__img--sm img--border" src="assets/images/bl_Designers_Critchlow.jpg" alt="Best&Lloyd Designer Anthony Critchlow">
+            <div class="card__info">
+               <h3 class="card__title sub-heading">Anthony Critchlow</h3>
+               <p class="card__text text">It was in the midst of a successful pop music career in the 1980s that Anthony Critchlow first discovered his flare
+                  for lighting design, making copper wall lights on his kitchen hob. The lights were a hit – swept up by the likes
+                  of Liberty and the Conran Shop, as well as Sharon Osbourne and Prince – and Anthony’s design career was born.
+                  Inspired by botanical and architectural forms, his unique designs are defined by their elliptical curves and
+                  radiant polished finishes. Commissions include the show-stopping chandelier in Prague’s Augustine hotel lobby
+                  and the Pugini wall lights in the Trianon Palace, Versailles.</p>
+            </div>
+         </section>
 
-<!-- Scroll to top -->
-<div id="back2Top"><svg class="icon"><use href="#icon-up" xlink:href="#icon-up"></use></svg></div>
+         <!-- Baldwin Guggisberg -->
+         <section class="card">
+            <img class="card__img card__img--sm img--border" src="assets/images/bl_Designers_Guggisberg.jpg" alt="Best&Lloyd Designer Philip Baldwin & Monica Guggisberg">
+            <div class="card__info">
+               <h3 class="card__title sub-heading">Philip Baldwin &amp; <span class="linebreak">Monica Guggisberg</span></h3>
+               <p class="card__text text">Philip Baldwin & Monica Guggisberg met at Oreffors in Sweden in the 1970’s and learned their metier in Sweden where
+                  layering color through blown overlays (originally developed by Simon Gate for the Graal technique at Orrefors)
+                  was an "old" 20th century process. Using the same techniques and using Italian cutting techniques (Battuto),
+                  originally pioneered by Carlo Scarpa in the 1930's and 40's, they opened up a vast and expanding panorama of
+                  possibilities. And for the last fifteen years, that is what they have been doing. In their words “Battuto is a style, a manner, a tool of expression. It allows an otherwise shiny glass surface to
+                  loose it's shine, to gain in an earthy, pithy texture, to acquire depth, a matte finish. Combined with layers
+                  of colored glass, cut through, it yields a whole new way to "paint" on glass. But the tool is never the expression
+                  itself”. With pieces in most of the world’s greatest collections and galleries, their craft has truly become art.
+                  Their latest installation “Under an Equal Sky” in Canterbury Cathedral was a commemoration of the 100th anniversary
+                  of the end of the First World War.</p>
+            </div>
+         </section>
 
+         <!-- Philip Gorrivan -->
+         <section class="card card--reverse">
+            <img class="card__img card__img--sm img--border" src="assets/images/bl_Designers_Gorrivan.jpg" alt="Best&Lloyd Designer Philip Gorrivan">
+            <div class="card__info">
+               <h3 class="card__title sub-heading">Philip Gorrivan</h3>
+               <p class="card__text text">Philip Gorrivan established his New York-based design firm in 2001, opening a London office in September 2013. 
+                  The firm applies its wide expertise and impeccable taste to the creation of luxury spaces – from private residences
+                  to commercial properties – as well as furniture and fabrics. Known for his clever sense of colour and refined eye,
+                  Philip’s aesthetic stems from his passion for the decorative arts and the history of architecture, juxtaposed with
+                  contemporary art and new techniques and finishes. Phillip brings this combination of fresh modernity and classic
+                  elegance to his new lighting collection for Best & Lloyd.</p>
+               <p class="card__text text">In addition to his architectural lighting collection for Best & Lloyd, Philip has a successful fabric collection
+                  for Duralee, a wallpaper and rug collection through Holland & sherry & beds for Luxury bed manufacturer Savoir Beds.
+                  Philip and his family reside in Manhattan and keeps a country home in Connecticut’s bucolic Litchfield hills. He is
+                  involved in several charities, including Diffa, the New York botanical gardens and the Kips Bay Boys and Girls Club.</p>
+            </div>
+         </section>
 
+         <!-- Chris Harman -->
+         <section class="card">
+            <img class="card__img card__img--sm img--border" src="assets/images/bl_Designers_Harman.jpg" alt="Best&Lloyd Designer Chris Harman">
+            <div class="card__info">
+               <h3 class="card__title sub-heading">Chris Harman</h3>
+               <p class="card__text text">Born in Colorado, America in 1976, Chris Harman moved to Canberra, Australia in his mid 20’s where he completed a
+                  Bachelor in Fine Arts at the Australian National University, School of Art.  His studies focused on mediums
+                  Ceramics and Glass. Over the years he has developed and exhibited his art locally and internationally.
+                  Working initially as a Glass studio assistant, Chris has been focused on own home studio practice making predominantly
+                  sculptural works using a mixture of metal and ceramic elements. In particular steel and copper with porcelain.</p>
+               <p class="card__text text">His continual fascination with the architecture of plant formations, in particular cacti, succulents and fungi, develops
+                  his art.  Like specimens, micro and macro investigation of his designs reveal the elemental and collective detail.
+                  The scale, structure and surface texture of his recent forms allow investigation of this internal and external space.
+                  By engineering multiple, almost mathematical elements of a structure and connecting them with an internal skeleton,
+                  He can create what is complex patterning into a simple whole form.  Playing with a deceptive defiance of gravity,
+                  repetitive growth and sense of fragility alongside strong structural elements.  The addition of light adds a further
+                  visual depth and dimension as shadows emphasise the forms spinal silhouette, creates distortion and further repetition
+                  of pattern as it splashes in gradation on the surrounding surfaces.
+                  Chris has collaborated with Best & Lloyd for the past ten years.</p>
+            </div>
+         </section>
 
-<!-- Main Start / Hero
-------------------------------------------------------------------------------->
-<main class="main">
-
-   <article class="wrap">
-      <h1 class="page__heading">Designers &amp; Artists</h1>
-
-      <!-- Adrien Bonaventure -->
-      <div class="card card--profile">
-         <div class="card__img__container">
-            <img class="card__img card__img--profile" src="assets/images/bl_Designers_Bonaventure.jpg" alt="Best&Lloyd Designer Adrien Bonaventure">
-         </div>
-         <div class="card__section">
-            <h3 class="card__title">Adrien Bonaventure</h3>
-            <p class="card__txt">Adrien entered the world of design as assistant to Lord Reilly, founding director of the Design Council in London.
-               He was strongly influenced by his Italian architect stepfather, who worked with Frank Lloyd Wright and who provided
-               his first lighting prototypes for the Adrien Bonaventure Collection with the Arc light. Adrien’s lamps were
-               introduced to the public at Pierre Frey in London. They quickly received a following among interior designers and
-               have been described as “the height of ambient elegance”. In 2004, the collection was merged into Best&Lloyd with
-               designs that have won awards for exceptional beauty in their simplicity and workmanship. The collection won the
-               BIDA outstanding product awards in 2004 to 2008.</p>
-         </div>
-      </div>
-
-      <!-- Antony Critchlow -->
-      <div class="card card--profile">
-         <div class="card__img__container">
-            <img class="card__img card__img--profile" src="assets/images/bl_Designers_Critchlow.jpg" alt="Best&Lloyd Designer Anthony Critchlow">
-         </div>
-         <div class="card__section">
-            <h3 class="card__title">Anthony Critchlow</h3>
-            <p class="card__txt">It was in the midst of a successful pop music career in the 1980s that Anthony Critchlow first discovered his flare
-               for lighting design, making copper wall lights on his kitchen hob. The lights were a hit – swept up by the likes
-               of Liberty and the Conran Shop, as well as Sharon Osbourne and Prince – and Anthony’s design career was born.
-               Inspired by botanical and architectural forms, his unique designs are defined by their elliptical curves and
-               radiant polished finishes. Commissions include the show-stopping chandelier in Prague’s Augustine hotel lobby
-               and the Pugini wall lights in the Trianon Palace, Versailles.</p>
-         </div>
-      </div>
-
-      <!-- Baldwin Guggisberg -->
-      <div class="card card--profile">
-         <div class="card__img__container">
-            <img class="card__img card__img--profile" src="assets/images/bl_Designers_Guggisberg.jpg" alt="Best&Lloyd Designer Philip Baldwin & Monica Guggisberg">
-         </div>
-         <div class="card__section">
-            <h3 class="card__title">Philip Baldwin &amp; <span class="txt-wrap">Monica Guggisberg</span></h3>
-            <p class="card__txt">Philip Baldwin & Monica Guggisberg met at Oreffors in Sweden in the 1970’s and learned their metier in Sweden where
-               layering color through blown overlays (originally developed by Simon Gate for the Graal technique at Orrefors)
-               was an "old" 20th century process. Using the same techniques and using Italian cutting techniques (Battuto),
-               originally pioneered by Carlo Scarpa in the 1930's and 40's, they opened up a vast and expanding panorama of
-               possibilities. And for the last fifteen years, that is what they have been doing.</p>
-            <p class="card__txt">In their words “Battuto is a style, a manner, a tool of expression. It allows an otherwise shiny glass surface to
-               loose it's shine, to gain in an earthy, pithy texture, to acquire depth, a matte finish. Combined with layers
-               of colored glass, cut through, it yields a whole new way to "paint" on glass. But the tool is never the expression
-               itself”. With pieces in most of the world’s greatest collections and galleries, their craft has truly become art.
-               Their latest installation “Under an Equal Sky” in Canterbury Cathedral was a commemoration of the 100th anniversary
-               of the end of the First World War.</p>
-         </div>
-      </div>
-
-      <!-- Philip Gorrivan -->
-      <div class="card card--profile">
-         <div class="card__img__container">
-            <img class="card__img card__img--profile" src="assets/images/bl_Designers_Gorrivan.jpg" alt="Best&Lloyd Designer Philip Gorrivan">
-         </div>
-         <div class="card__section">
-            <h3 class="card__title">Philip Gorrivan</h3>
-            <p class="card__txt">Philip Gorrivan established his New York-based design firm in 2001, opening a London office in September 2013. 
-               The firm applies its wide expertise and impeccable taste to the creation of luxury spaces – from private residences
-               to commercial properties – as well as furniture and fabrics. Known for his clever sense of colour and refined eye,
-               Philip’s aesthetic stems from his passion for the decorative arts and the history of architecture, juxtaposed with
-               contemporary art and new techniques and finishes. Phillip brings this combination of fresh modernity and classic
-               elegance to his new lighting collection for Best & Lloyd.</p>
-            <p class="card__txt">In addition to his architectural lighting collection for Best & Lloyd, Philip has a successful fabric collection
-               for Duralee, a wallpaper and rug collection through Holland & sherry & beds for Luxury bed manufacturer Savoir Beds.
-               Philip and his family reside in Manhattan and keeps a country home in Connecticut’s bucolic Litchfield hills. He is
-               involved in several charities, including Diffa, the New York botanical gardens and the Kips Bay Boys and Girls Club.</p>
-         </div>
-      </div>
-
-      <!-- Chris Harman -->
-      <div class="card card--profile">
-         <div class="card__img__container">
-            <img class="card__img card__img--profile" src="assets/images/bl_Designers.jpg" alt="Best&Lloyd Designer Chris Harman">
-         </div>
-         <div class="card__section">
-            <h3 class="card__title">Chris Harman</h3>
-            <p class="card__txt">Born in Colorado, America in 1976, Chris Harman moved to Canberra, Australia in his mid 20’s where he completed a
-               Bachelor in Fine Arts at the Australian National University, School of Art.  His studies focused on mediums
-               Ceramics and Glass. Over the years he has developed and exhibited his art locally and internationally.
-               Working initially as a Glass studio assistant, Chris has been focused on own home studio practice making predominantly
-               sculptural works using a mixture of metal and ceramic elements. In particular steel and copper with porcelain.</p>
-            <p class="card__txt">His continual fascination with the architecture of plant formations, in particular cacti, succulents and fungi, develops
-               his art.  Like specimens, micro and macro investigation of his designs reveal the elemental and collective detail.
-               The scale, structure and surface texture of his recent forms allow investigation of this internal and external space.
-               By engineering multiple, almost mathematical elements of a structure and connecting them with an internal skeleton,
-               He can create what is complex patterning into a simple whole form.  Playing with a deceptive defiance of gravity,
-               repetitive growth and sense of fragility alongside strong structural elements.  The addition of light adds a further
-               visual depth and dimension as shadows emphasise the forms spinal silhouette, creates distortion and further repetition
-               of pattern as it splashes in gradation on the surrounding surfaces.
-               Chris has collaborated with Best & Lloyd for the past ten years.</p>
-         </div>
-      </div>
-
-      <div class="card card--profile">
-         <div class="card__img__container">
-            <img class="card__img card__img--profile" src="assets/images/bl_Designers.jpg" alt="Best&Lloyd Designer Stewart Hearn">
-         </div>
-         <div class="card__section">
-            <h3 class="card__title">Stewart Hearn</h3>
-            <p class="card__txt">Stuart is a glass blower specialising in hand-made and bespoke handblown glass. highly respected, and an award winning
-               craftsman and designer. He has established a professional practice over thirty years, developed during his experience of
-               working with some of Britain’s most well known glassmakers.  He is sole owner of London Glassworks.
-               All aspects of Stewart’s work demand high standards of technical skill and design – where traditional skills interpret
-               contemporary visions. In his personal unique work, he is always pushing his craft and skills harder and higher with every
-               piece he makes.  It is his passion to always make the next piece better than the last … not forgetting the integrity of the
-               design of the pieces and their composition, he is simultaneously dealing with the heat versus the weight of the glass on the
-               iron. Creating his pieces involves speed of thought in making and creative decision, being at one with the material,
-               and using his skills and knowledge gained over his 30 years of dedication to the craft. something that was acknowledged
-               amongst UK makers when he was awarded the Balvenie Master of Craft 2011, Glass and Ceramics category. Stewart has collaborated
-               with Best & Lloyd for the past 15 years.</p>
-         </div>
-      </div>
+         <section class="card card--reverse">
+            <img class="card__img card__img--sm img--border" src="assets/images/bl_Designers.jpg" alt="Best&Lloyd Designer Stewart Hearn">
+            <div class="card__info">
+               <h3 class="card__title sub-heading">Stewart Hearn</h3>
+               <p class="card__text text">Stuart is a glass blower specialising in hand-made and bespoke handblown glass. highly respected, and an award winning
+                  craftsman and designer. He has established a professional practice over thirty years, developed during his experience of
+                  working with some of Britain’s most well known glassmakers.  He is sole owner of London Glassworks.
+                  All aspects of Stewart’s work demand high standards of technical skill and design – where traditional skills interpret
+                  contemporary visions. In his personal unique work, he is always pushing his craft and skills harder and higher with every
+                  piece he makes.  It is his passion to always make the next piece better than the last … not forgetting the integrity of the
+                  design of the pieces and their composition, he is simultaneously dealing with the heat versus the weight of the glass on the
+                  iron. Creating his pieces involves speed of thought in making and creative decision, being at one with the material,
+                  and using his skills and knowledge gained over his 30 years of dedication to the craft. something that was acknowledged
+                  amongst UK makers when he was awarded the Balvenie Master of Craft 2011, Glass and Ceramics category. Stewart has collaborated
+                  with Best & Lloyd for the past 15 years.</p>
+            </div>
+         </section>
+      </div>   
    </article>
 </main>
 
 <!-- Footer -->
-   <!-- <div w3-include-html="includes/site-footer.html"></div> -->
+<div w3-include-html="includes/site-smedia-links.html"></div>
+<div w3-include-html="includes/site-footer.html"></div>
 
 
-<!-- + + + + + + + + + scripts + + + + + + + + +  -->
+   <!-- + + + + + + + + + scripts + + + + + + + + +  -->
 
-<!-- HTML Include -->
-<script> includeHTML(); </script>
+   <!-- HTML Include -->
+   <script> includeHTML(); </script>
 
-
-
-<!-- Modal search -->
-<script>
-   var modal = document.getElementById('modalSearch');
-   // When the user clicks anywhere outside of the modal, close it
-   window.onclick = function(event) {
-      if (event.target == modal) {
-         modal.style.display = "none";
+   <!-- Modal search -->
+   <script>
+      var modal = document.getElementById('modalSearch');
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+         if (event.target == modal) {
+            modal.style.display = "none";
+         }
       }
-   }
-</script>
+   </script>
 
-<!-- Modal login  -->
-<script>
-   var modal = document.getElementById('modalLogin');
-   // When the user clicks anywhere outside of the modal, close it
-   window.onclick = function(event) {
-      if (event.target == modal) {
-         modal.style.display = "none";
-      }
-   }
-</script>
+   <!-- Modal login  -->
+   <script>
+      var modal = document.getElementById('modalLogin');
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+         if (event.target == modal) {
+            modal.style.display = "none";}}
+   </script>
 
 
-<script>
-function openNavbarNav() {
-   document.getElementById("navbarDropmenu").style.height = "250px";
-   document.getElementById("main").style.marginTop = "250px";
-   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
+   <!-- Modals -->
+   <script>
+   function openNavbarNav() {
+      document.getElementById("navbarDropmenu").style.height = "250px";
+      document.getElementById("main").style.marginTop = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";}
 
-function closeNavbarNav() {
-   document.getElementById("navbarDropmenu").style.height = "0";
-   document.getElementById("main").style.marginTop= "0";
-   document.body.style.backgroundColor = "white";
-}
-</script>
-
-
-<!-- Header Shrink--->
-<script type="text/javascript">
-   window.onscroll = function() {
-      scrollFunction()
-   };
-   function scrollFunction() {
-      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-         document.getElementById("logoShrink").style.margin = "14px 0px";
-         document.getElementById("navShrinkTabletPlus").style.padding = "10px 0px";
-      } else {
-         document.getElementById("logoShrink").style.margin = "28px 0px";
-         document.getElementById("navShrinkTabletPlus").style.padding = "12px 0px";
-      } }
-</script>
+   function closeNavbarNav() {
+      document.getElementById("navbarDropmenu").style.height = "0";
+      document.getElementById("main").style.marginTop= "0";
+      document.body.style.backgroundColor = "white";}
+   </script>
 
 
-<!-- Headerbar Navigation--->
-<script>
-   $("#menuBurger").click( function() {
-   	$(".burger").toggleClass("burger-close");
-      });
-</script>
-
-<script>
-      $('nav div').click(function() {
-          $('ul').slideToggle();
-          $('ul ul').css('display', 'none'); });
-      $('ul li').click(function() {
-          $('ul ul').slideUp();
-          $(this).find('ul').slideToggle(); });
-      $(window).resize(function() {
-          if($(window).width() > 765) {
-              $('ul').removeAttr('style'); }});
-</script>
+   <!-- Header Shrink -->
+   <script type="text/javascript">
+      window.onscroll = function() {
+         scrollFunction()
+      };
+      function scrollFunction() {
+         if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            document.getElementById("logoShrink").style.width = "224px";
+            document.getElementById("logoShrink").style.margin = "22px 0px";
+            document.getElementById("navShrinkTabletPlus").style.padding = "10px 0px";
+         } else {
+            document.getElementById("logoShrink").style.width = "240px";
+            document.getElementById("logoShrink").style.margin = "26px 0px";
+            document.getElementById("navShrinkTabletPlus").style.padding = "12px 0px";
+         } }
+   </script>
 
 
-<!-- See More Button -->
-<script>
-function myFunction() {
-  var dots = document.getElementById("viewMoreDots");
-  var moreText = document.getElementById("viewMoreTxt");
-  var btnText = document.getElementById("viewMoreBtn");
+   <!-- Headerbar Navigation--->
+   <script>
+      $("#menuBurger").click( function() {
+      	$(".burger").toggleClass("burger-close");
+         });
+   </script>
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  } }
-</script>
+   <script>
+         $('nav div').click(function() {
+             $('ul').slideToggle();
+             $('ul ul').css('display', 'none'); });
+         $('ul li').click(function() {
+             $('ul ul').slideUp();
+             $(this).find('ul').slideToggle(); });
+         $(window).resize(function() {
+             if($(window).width() > 765) {
+                 $('ul').removeAttr('style'); }});
+   </script>
 
 
-<!-- Scroll 2 Top -->
-<script type="text/javascript">
-   $(window).scroll(function() {
-      var height = $(window).scrollTop();
-      if (height > 200) {$('#back2Top').fadeIn();} else {
-         $('#back2Top').fadeOut();} });
-   $(document).ready(function() {
-      $("#back2Top").click(function(event) {
-         event.preventDefault();
-         $("html, body").animate({
-            scrollTop: 0
-         }, "slow");
-         return false; }); });
-</script>
+   <!-- See More Button -->
+   <script>
+   function myFunction() {
+     var dots = document.getElementById("viewMoreDots");
+     var moreText = document.getElementById("viewMoreTxt");
+     var btnText = document.getElementById("viewMoreBtn");
 
-</body>
-</html>
+     if (dots.style.display === "none") {
+       dots.style.display = "inline";
+       btnText.innerHTML = "Read more";
+       moreText.style.display = "none";
+     } else {
+       dots.style.display = "none";
+       btnText.innerHTML = "Read less";
+       moreText.style.display = "inline";
+     } }
+   </script>
+
+
+   <!-- Scroll 2 Top -->
+   <script type="text/javascript">
+      $(window).scroll(function() {
+         var height = $(window).scrollTop();
+         if (height > 200) {$('#back2Top').fadeIn();} else {
+            $('#back2Top').fadeOut();} });
+      $(document).ready(function() {
+         $("#back2Top").click(function(event) {
+            event.preventDefault();
+            $("html, body").animate({
+               scrollTop: 0
+            }, "slow");
+            return false; }); });
+   </script>
+
+   </body>
+   </html>

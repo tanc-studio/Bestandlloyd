@@ -4,14 +4,15 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-      <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700|Work+Sans:200,300,400,500,600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,600&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="webfonts/bl_optima_font.css">
+      <link rel="stylesheet" type="text/css" href="css/optima.css">
       <link rel="stylesheet" href="css/base.css">
       <link rel="stylesheet" href="css/components.css">
       <link rel="stylesheet" href="css/layout.css">
+      <script src="https://kit.fontawesome.com/2c9bb2f653.js" crossorigin="anonymous"></script>
+      <meta charset="utf-8">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
          function includeHTML() {var z, i, elmnt, file, xhttp; z = document.getElementsByTagName("*"); for (i = 0; i < z.length; i++) { elmnt = z[i]; file = elmnt.getAttribute("w3-include-html"); if (file) { xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() {
          if (this.readyState == 4) { if (this.status == 200) {elmnt.innerHTML = this.responseText;} if (this.status == 404) {elmnt.innerHTML = "Page not found.";} elmnt.removeAttribute("w3-include-html"); includeHTML(); s} }
@@ -21,45 +22,62 @@
    </head>
 <body>
    <div class="svg-page" style="display:none;" w3-include-html="svg-files.html"></div>
+
    <!-- Header -->
    <div class="site-header" w3-include-html="includes/site-header.html"></div>
-   <!-- Scroll to top -->
-   <div id="back2Top"><svg class="icon"><use href="#icon-up" xlink:href="#icon-up"></use></svg></div>
-   <!-- Main Start-->
 
+   <!-- Main Start-->
    <main class="main main--flush">
 
-      <section class="product">
+      <!--Product Overview -->
+      <section class="product product--hero">
 
          <!-- Product Image -->
-         <div class="product__example">
-            <img class="product__img--lg" src="assets/Products/Anenome_MB_Large_Table_GoldenBronze.jpg" alt="">
-         </div>
+         <div class="product__example"><img class="product__img--lg" src="assets/products/Anenome_24_Table_WarmGold.jpg" alt=""></div>
 
          <!-- Product Description -->
          <aside class="product__description">
             <h1 class="product__name">Prunus Round</h1>
-            <p class="product__text">Anthony Critchlow designed this amazingly simple and versatile concept of glass balls in rings. The more structured outline of this piece makes it ideal for corridors and more formal settings.</p>
+            <h3 class="product__version text--sm">30" Mixed Ball</h3>
+            <p class="product__text text--sm">Anthony Critchlow designed this amazingly simple and versatile concept of glass balls in rings. The more structured outline of this piece makes it ideal for corridors and more formal settings.</p>
             <div class="product__icons icon-set">
-               <a href="www.bestandlloyd.com"><svg class="icon"><use href="#icon-add" xlink:href="#icon-add"></use></svg></a>
-               <svg class="icon"><use href="#icon-share" xlink:href="#icon-add"></use></svg>
+               <a class="tooltip" href="#">
+                  <p class="tooltip__text tooltip--icons">Print Page</p>
+                  <svg class="icon"><use href="#icon-print" xlink:href="#icon-print"></use></svg>
+               </a>
+               <a class="tooltip" href="#">
+                  <p class="tooltip__text tooltip--icons">Schemeboard</p>
+                  <svg class="icon"><use href="#icon-add" xlink:href="#icon-add"></use></svg>
+               </a>
+               <a class="tooltip" href="#">
+                  <p class="tooltip__text tooltip--icons">Tearsheet</p>
+                  <svg class="icon"><use href="#icon-download" xlink:href="#icon-download"></use></svg>
+               </a>
+            </div>
+            <div class="btn--smedia">
+               <span class="btn__title">Share</span>
+               <nav class="btn__links">
+                  <a class="btn__smedia__link" href=""><i class="fa fa-facebook"></i></a>
+                  <a class="btn__smedia__link" href=""><i class="fa fa-twitter"></i></a>
+                  <a class="btn__smedia__link" href=""><i class="fa fa-instagram"></i></a>
+                  <a class="btn__smedia__link" href=""><i class="fa fa-google"></i></a>
+               </nav>
             </div>
          </aside>
 
          <!-- Product Info -->
          <div class="product__info">
-            <!-- Accordion -->
             <ul id="accordion">
                <li>
                   <div class="accordion__link">
                      <h4 class="accordion__heading">Dimensions</h4><svg class="icon icon--down accordion__arrow"><use href="#icon-down" xlink:href="#icon-down"></use></svg>
                   </div>
-                  <ul class="accordion__sub-link">
+                  <ul class="accordion__sub-link accordion-fade">
                      <li>
-                        <p class="p-sm">
+                        <p class="text-info">
                            H:120cm/48" W:60cm/24" P:15cm/6"<br>
                            With Shade:<br>
-                           H:140cm/48" W:60cm/24" P:35cm/6"<br>
+                           H:140cm/48" W:60cm/24" P:35cm/6"
                         </p>
                      </li>
                   </ul>
@@ -68,64 +86,160 @@
                   <div class="accordion__link">
                      <h4 class="accordion__heading">Finishes</h4><svg class="icon icon--down accordion__arrow"><use href="#icon-down" xlink:href="#icon-down"></use></svg>
                   </div>
+                  <ul class="accordion__sub-link accordion-fade">
+                     <li class="slider--accordion slider-fade">
 
-                  <ul class="accordion__sub-link">
-
-                     <li class="accordion__slider">
-                        <!-- slide 1 -->
+                        <!-- Cut Glass -->
                         <div class="mySlides">
-                           <h4 class="accordion__slide__title">Cut Glass</h4>
-
-                           <figure class="accordion__images">
-                              <img class="accordion__img" src="assets/images/bl_Finishes_Glass_Faceted_Amber.jpg" alt="Best&LLoyd Cut Glass Finishes">
-                              <img class="accordion__img" src="assets/images/bl_Finishes_Glass_Faceted_Aubergine.jpg" alt="Best&LLoyd Cut Glass Finishes">
-                              <img class="accordion__img" src="assets/images/bl_Finishes_Glass_Faceted_Clear.jpg" alt="Best&LLoyd Cut Glass Finishes">
-                              <img class="accordion__img" src="assets/images/bl_Finishes_Glass_Faceted_Colbalt.jpg" alt="Best&LLoyd Cut Glass Finishes">
-                              <img class="accordion__img" src="assets/images/bl_Finishes_Glass_Faceted_Green.jpg" alt="Best&LLoyd Cut Glass Finishes">
-                              <img class="accordion__img" src="assets/images/bl_Finishes_Glass_Faceted_Grey.jpg" alt="Best&LLoyd Cut Glass Finishes">
-                              <img class="accordion__img" src="assets/images/bl_Finishes_Glass_Faceted_Olive.jpg" alt="Best&LLoyd Cut Glass Finishes">
-                              <img class="accordion__img" src="assets/images/bl_Finishes_Glass_Faceted_Pink.jpg" alt="Best&LLoyd Cut Glass Finishes">
-                              <img class="accordion__img" src="assets/images/bl_Finishes_Glass_Faceted_Red.jpg" alt="Best&LLoyd Cut Glass Finishes">
-                              <img class="accordion__img" src="assets/images/bl_Finishes_Glass_Faceted_SteelBlue.jpg" alt="Best&LLoyd Cut Glass Finishes">
-                           </figure>
-                           <a class="accordion__slide__link" href="#">View More</a>
-
-                           <!-- <p class="p-sm">Amber, Amethyst, Blackcurrant, Burgundy, Black, Clear, Grey, Indigo, Mirrored, Olive, Pink, Purple, Quartz, Red, Snow, Steel Blue, Turquoise</p> -->
-
-                        </div>
-                        <!-- slide 2 -->
-                        <div class="mySlides">
-                           <h4>Leather Colour</h4>
-                           <p class="p-sm">
-                           Black, Burgundy, Chocolate
-                           Dark Green, Red, Tan, Custom</p>
-
-                        </div>
-                        <!-- slide 3 -->
-                        <div class="mySlides">
-                           <h4>Lead Crystal</h4>
-                           <p class="p-sm">
-                           Black, Burgundy</p>
+                           <h4 class="slide--accordion__title">Cut Glass</h4>
+                           <div class="slide--accordion__images slide--accordion__5col slider-fade">
+                              <a class="tooltip" href="#">
+                                 <p class="tooltip__text tooltip--finishes">Amber</p>
+                                 <img class="slide--accordion__img tooltip" src="assets/finishes/small/bl_Finishes_Cut_Glass_Amber.jpg" alt="Best&LLoyd Cut Glass Finishes">
+                              </a>
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Cut_Glass_Aubergine.jpg" alt="Best&LLoyd Cut Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Cut_Glass_Clear.jpg" alt="Best&LLoyd Cut Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Cut_Glass_Colbalt.jpg" alt="Best&LLoyd Cut Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Cut_Glass_Green.jpg" alt="Best&LLoyd Cut Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Cut_Glass_Grey.jpg" alt="Best&LLoyd Cut Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Cut_Glass_Olive.jpg" alt="Best&LLoyd Cut Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Cut_Glass_Pink.jpg" alt="Best&LLoyd Cut Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Cut_Glass_Red.jpg" alt="Best&LLoyd Cut Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Cut_Glass_SteelBlue.jpg" alt="Best&LLoyd Cut Glass Finishes">
+                           </div>
                         </div>
 
-                        <a class="slide-prev" onclick="plusSlides(-1)">
-                           <svg class="icon"><use href="#icon-previous" xlink:href="#icon-next"></use></svg>
-                        </a>
-                        <a class="slide-next" onclick="plusSlides(1)">
-                           <svg class="icon"><use href="#icon-next" xlink:href="#icon-next"></use></svg>
-                        </a>
+                        <!-- Critchlow -->
+                        <div class="mySlides">
+                           <h4 class="slide--accordion__title">Critchlow Spheres</h4>
+                           <div class="slide--accordion__images slide--accordion__2col">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Critchlow_WarmGold.jpg" alt="Best&LLoyd Critchlow Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Critchlow_PolishedNickel.jpg" alt="Best&LLoyd Critchlow Finishes">
+                           </div>
+                        </div>
+
+                        <!-- Glass -->
+                        <div class="mySlides">
+                           <h4 class="slide--accordion__title">Glass Colour</h4>
+                           <div class="slide--accordion__images slide--accordion__5col--gap slider-fade">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Aubergine.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Amber.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Burgundy.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Black.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Blackcurrant.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Cobalt.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Clear.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Grey.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Indigo.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Jade.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Lime.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Olive.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_OpalWhite.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Peach.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Purple.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img"src="assets/finishes/small/bl_Finishes_Glass_Quartz.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Red.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_SteelBlue.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Tea.jpg" alt="Best&LLoyd Glass Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Glass_Tourmaline.jpg" alt="Best&LLoyd Glass Finishes">
+                           </div>
+                        </div>
+
+                        <!-- Leather -->
+                        <div class="mySlides">
+                           <h4 class="slide--accordion__title">Leather Finishes</h4>
+                           <div class="slide--accordion__images slider-fade">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Leather_Black-2.jpg" alt="Best&LLoyd Leather Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Leather_Burgundy-2.jpg" alt="Best&LLoyd Leather Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Leather_Choccolate-2.jpg" alt="Best&LLoyd Leather Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Leather_Green-2.jpg" alt="Best&LLoyd Leather Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Leather_Red-2.jpg" alt="Best&LLoyd Leather Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Leather_Tan-2.jpg" alt="Best&LLoyd Leather Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Leather_Navy-2.jpg" alt="Best&LLoyd Leather Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Leather_White-2.jpg" alt="Best&LLoyd Leather Finishes">
+                           </div>
+                        </div>
+
+                        <!-- Marble & Semi Precious Stone -->
+                        <div class="mySlides">
+                           <h4 class="slide--accordion__title">Marble &amp; Semi Prectious Stone</h4>
+                           <div class="slide--accordion__images slider-fade">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Marble_Cornelian.jpg" alt="Best&LLoyd Marble Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Marble_Granite.jpg" alt="Best&LLoyd Marble Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Marble_Green.jpg" alt="Best&LLoyd Marble Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Marble_Lapiz.jpg" alt="Best&LLoyd Marble Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Marble_Malachite.jpg" alt="Best&LLoyd Marble Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Marble_MarronCohiba.jpg" alt="Best&LLoyd Marble Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Marble_CarraraWhite.jpg" alt="Best&LLoyd Marble Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Marble_RossoLevanto.jpg" alt="Best&LLoyd Marble Finishes">
+                           </div>
+                        </div>
+
+                        <!-- Metal -->
+                        <div class="mySlides">
+                           <h4 class="slide--accordion__title">Metal</h4>
+                           <div class="slide--accordion__images slider-fade">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Metal_AntiqueBrass.jpg" alt="Best&LLoyd Metal Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Metal_Brass.jpg" alt="Best&LLoyd Metal Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Metal_Bronze.jpg" alt="Best&LLoyd Metal Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Metal_BronzeRelief.jpg" alt="Best&LLoyd Metal Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Metal_BrushedNickel.jpg" alt="Best&LLoyd Metal Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Metal_Chrome.jpg" alt="Best&LLoyd Metal Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Metal_Gold18k.jpg" alt="Best&LLoyd Metal Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Metal_Nickel.jpg" alt="Best&LLoyd Metal Finishes">
+                           </div>
+                        </div>
+
+                        <!-- Wood -->
+                        <div class="mySlides">
+                           <h4 class="slide--accordion__title">Wood</h4>
+                           <div class="slide--accordion__images slide--accordion__2col slider-fade">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Wood_Mahogany.jpg" alt="Best&LLoyd Wood Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Wood_walnut.jpg" alt="Best&LLoyd Wood Finishes">
+                           </div>
+                        </div>
+
+                        <!-- Encalmo -->
+                        <div class="mySlides">
+                           <h4 class="slide--accordion__title">Encalmo</h4>
+                           <div class="slide--accordion__images slide--encalmo slider-fade">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Encalmo_TeaAndPeach.jpg" alt="Best&LLoyd Encalmo Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Encalmo_SteelBlueAndTurquoise.jpg" alt="Best&LLoyd Encalmo Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Encalmo_RoseAndPurple.jpg" alt="Best&LLoyd Encalmo Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Encalmo_OliveAndLime.jpg" alt="Best&LLoyd Encalmo Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Encalmo_AmberAndOlive.jpg" alt="Best&LLoyd Encalmo Finishes">
+                           </div>
+                        </div>
+
+                        <!-- Flex -->
+                        <div class="mySlides">
+                           <h4 class="slide--accordion__title">Flex</h4>
+                           <div class="slide--accordion__images slide--flex slider-fade">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Flex_Flat_Black-2.jpg" alt="Best&LLoyd Flex Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Flex_Flat_Chocolate-2.jpg" alt="Best&LLoyd Flex Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Flex_Flat_Havana-2.jpg" alt="Best&LLoyd Flex Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Flex_Flat_Silver-2.jpg" alt="Best&LLoyd Flex Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Flex_Twisted_Black-2.jpg" alt="Best&LLoyd Flex Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Flex_Twisted_Chocolate-2.jpg" alt="Best&LLoyd Flex Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Flex_Twisted_Havana-2.jpg" alt="Best&LLoyd Flex Finishes">
+                              <img class="slide--accordion__img" src="assets/finishes/small/bl_Finishes_Flex_Twisted_Silver-2.jpg" alt="Best&LLoyd Flex Finishes">
+                           </div>
+                        </div>
+
+                        <div class="slider--accordion__bottom"><a class="slider--accordion__text" href="#">Download Finishes</a></div>
+                        <a class="slider--accordion-prev" onclick="plusSlides(-1)"><svg class="icon"><use href="#icon-previous" xlink:href="#icon-next"></use></svg></a>
+                        <a class="slider--accordion-next" onclick="plusSlides(1)"><svg class="icon"><use href="#icon-next" xlink:href="#icon-next"></use></svg></a>
                      </li>
+
                   </ul>
                </li>
-
-               <!-- Accordion link 3 -->
                <li>
                   <div class="accordion__link">
                      <h4 class="accordion__heading">Specification</h4><svg class="icon icon--down accordion__arrow"><use href="#icon-down" xlink:href="#icon-down"></use></svg>
                   </div>
-                  <ul class="accordion__sub-link">
+                  <ul class="accordion__sub-link accordion-fade">
                      <li>
-                        <p class="p-sm">
+                        <p class="text-info">
                            US: E26 & E12 | UK/EU: E27 & E14<br>
                            Max 60W GLS & Max 40W Golf Ball<br>
                            Wired to CE & UL Standards</p>
@@ -133,198 +247,161 @@
                   </ul>
                </li>
             </ul>
-            <!-- Button -->
-            <div class="btn btn--rounded">
-               <a class="btn__link" href="assets/images/bl_test.pdf" download>
-                  Tearsheet <svg class="icon"><use href="#icon-file" xlink:href="#icon-file"></use></svg>
-               </a>
+            <div class="product__info__bottom">
+               <!-- Prev / Next -->
+               <div class="links links--pages">
+                  <a class="links--page" href="" class="prev__link">Prev</a>
+                  <a class="links--page" href="" class="prev__link">Next</a>
+               </div>
+               <div class="btn btn--rounded btn--enquiries btn--gold">
+                  <a class="btn__link" href="findus.html">Enquiries</a>
+               </div>
             </div>
          </div>
 
-   </section>
-
-      <hr class="devider">
-
-
-      <!-- Product Finishes -->
-      <!-- <section class="section section--cards">
-         <h3>Cut Glass</h3>
-         <p class="p-max">Our cut glass is blown using colour rods and there are hundreds available to choose from. The blanks weigh up to 20 Kilos
-            and can take up to 30 hours to cut. Our standard colours are Cobalt Blue, Emerald Green, Meer Green, Pink, Red, Grey, Jade, Olive,
-            Steel Blue, Purple & Clear. Custom Colours are also available on a longer lead-time. Please see links to transparent colours from the
-            2 main manufacturers.</p>
-         <div class="section__links">
-            <a class="section__link" target="_blank" href="https://www.kuglercolors.de/en/products/kugler-colors/#colortable">Kugler Colors</a>
-            <a class="section__link" target="_blank" href="http://www.gafferglass.com/shop/blowing-glass/transparent-colours">Gaffer Glass</a>
-         </div>
-         <div class="btn btn--rounded">
-            <a href="assets/images/bl_test.pdf" download>
-               Tearsheet <svg class="icon"><use href="#icon-file" xlink:href="#icon-file"></use></svg>
-            </a>
-         </div>
-         <div class="cards cards-grid--3col wrap--thin">
-            <figure class="card">
-               <img class="card__img" src="assets/images/bl_Finishes_Glass_Faceted_Amber.jpg" alt="Best&LLoyd Cut Glass Finishes">
-               <figcaption class="card__caption"><h4>Amber</h4></figcaption>
-            </figure>
-            <figure class="card">
-               <img class="card__img" src="assets/images/bl_Finishes_Glass_Faceted_Aubergine.jpg" alt="Best&LLoyd Cut Glass Finishes">
-               <figcaption class="card__caption"><h4>Aubergine</h4></figcaption>
-            </figure>
-            <figure class="card">
-               <img class="card__img" src="assets/images/bl_Finishes_Glass_Faceted_Clear.jpg" alt="Best&LLoyd Cut Glass Finishes">
-               <figcaption class="card__caption"><h4>Clear</h4></figcaption>
-            </figure>
-            <figure class="card">
-               <img class="card__img" src="assets/images/bl_Finishes_Glass_Faceted_Colbalt.jpg" alt="Best&LLoyd Cut Glass Finishes">
-               <figcaption class="card__caption"><h4>Colbalt</h4></figcaption>
-            </figure>
-            <figure class="card">
-               <img class="card__img" src="assets/images/bl_Finishes_Glass_Faceted_Green.jpg" alt="Best&LLoyd Cut Glass Finishes">
-               <figcaption class="card__caption"><h4>Green</h4></figcaption>
-            </figure>
-            <figure class="card">
-               <img class="card__img" src="assets/images/bl_Finishes_Glass_Faceted_Grey.jpg" alt="Best&LLoyd Cut Glass Finishes">
-               <figcaption class="card__caption"><h4>Faceted Grey</h4></figcaption>
-            </figure>
-            <figure class="card">
-               <img class="card__img" src="assets/images/bl_Finishes_Glass_Faceted_Olive.jpg" alt="Best&LLoyd Cut Glass Finishes">
-               <figcaption class="card__caption"><h4>Olive</h4></figcaption>
-            </figure>
-            <figure class="card">
-               <img class="card__img" src="assets/images/bl_Finishes_Glass_Faceted_Pink.jpg" alt="Best&LLoyd Cut Glass Finishes">
-               <figcaption class="card__caption"><h4>Pink</h4></figcaption>
-            </figure>
-            <figure class="card">
-               <img class="card__img" src="assets/images/bl_Finishes_Glass_Faceted_Red.jpg" alt="Best&LLoyd Cut Glass Finishes">
-               <figcaption class="card__caption"><h4>Red</h4></figcaption>
-            </figure>
-            <figure class="card">
-               <img class="card__img" src="assets/images/bl_Finishes_Glass_Faceted_SteelBlue.jpg" alt="Best&LLoyd Cut Glass Finishes">
-               <figcaption class="card__caption"><h4>Steel Blue</h4></figcaption>
-            </figure>
-         </div>
       </section>
 
-      <hr class="devider"> -->
+      <!--Gallery -->
+      <div class="devider"></div>
+      <div class="gallery wrap--wide">
+         <img class="gallery__item gallery__img" src="assets/products/gallery_img_1.jpg" alt="Best and Lloyd Lighting Product">
+         <div class="gallery__item text text--max">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sequi perferendis consequuntur aperiam recusandae ducimus expedita velit sed cum distinctio!</p>
+         </div>
+         <div id="comparison__slider">
+            <figure id="comparison__slider__img">
+               <div id="handle"></div>
+               <div id="divisor"></div>
+            </figure>
+            <input id="slider" type="range" min="0" max="100" value="50" oninput="moveDivisor()">
+         </div>
+         <div class="gallery__item text text--max">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sequi perferendis consequuntur aperiam recusandae ducimus expedita velit sed cum distinctio!</p>
+         </div>
+         <img class="gallery__item gallery__img" src="assets/products/gallery_img_2.jpg" alt="Best and Lloyd Lighting Product">
+         <div class="gallery__item text text--max">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sequi perferendis consequuntur aperiam recusandae ducimus expedita velit sed cum distinctio!</p>
+         </div>
+      </div>
 
+
+
+      <!--Related Products -->
+      <div class="devider"></div>
+      <h2 class="heading heading--row">Related Products</h2>
+      <div class="grid-products wrap">
+
+         <figure class="product__img__con">
+            <img class="product__img" src="assets/products/Anenome_36_Table_WarmGold.jpg" alt="Best and Lloyd Lighting Product">
+            <figcaption>
+               <h3 class="product__name--sm">Product Name</h3>
+               <p class="product__finish">Finishes</p>
+            </figcaption>
+         </figure>
+
+         <figure class="product__img__con product__tablet">
+            <img class="product__img" src="assets/products/Anenome_30_Pendant_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
+            <figcaption>
+               <h3 class="product__name--sm">Product Name</h3>
+               <p class="product__finish">Finishes</p>
+            </figcaption>
+         </figure>
+
+         <figure class="product__img__con product__screen">
+            <img class="product__img" src="assets/products/Anenome_18_Pendant_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
+            <figcaption>
+               <h3 class="product__name--sm">Product Name</h3>
+               <p class="product__finish">Finishes</p>
+            </figcaption>
+         </figure>
+
+      </div>
    </main>
 
 <!-- Footer -->
-   <div w3-include-html="includes/site-footer.html"></div>
-
-
-   <!-- All of our products are handmade
-& unique, therefore small differences
-may occur in size & colour
-
-
-These are standard colours & finishes
-For a specific request please arrange
-a consultation
-
-Metal Finish
-Antique Brass, Brushed Brass, Satin Nickel, Bronze
-Chrome, Satin Brass, Polished Nickel, Gold Plate 24K
-
-Glass Colour
-Amber, Aubergine, Burgundy, Clear, Indigo, Steel Blue
-
-CUT GLASS
-Amber, Aubergine, Clear, Cobalt
-Emerald Green, Grey, Olive, Pink
-Red, Steel Blue
-
-Leather Colour
-Black, Burgundy, Chocolate
-Dark Green, Red, Tan, Custom
-
-MARBLE BASE
-Black Granite,  Carrara White
-Cornelian, Lapis Lazuli, Malachite Marron Cohiba (Felix)
-
-LEAD CRYSTAL
-Amber & Clear
-
-
-
-
--->
+<div w3-include-html="includes/site-smedia-links.html"></div>
+<div w3-include-html="includes/site-footer.html"></div>
 
 
 <!-- + + + + + + + + + scripts + + + + + + + + +  -->
-
-
 
 <!-- HTML Include -->
 <script> includeHTML(); </script>
 
 
+<!-- Modal search -->
+<script>
+   var modal = document.getElementById('modalSearch');
+   // When the user clicks anywhere outside of the modal, close it
+   window.onclick = function(event) {
+      if (event.target == modal) {
+         modal.style.display = "none";
+      }
+   }
+</script>
 
-<!-- Header Shrink--->
+
+
+<script>
+   var divisor = document.getElementById("divisor"),
+       handle = document.getElementById("handle"),
+       slider = document.getElementById("slider");
+
+   function moveDivisor() {
+     handle.style.left = slider.value+"%";
+   	divisor.style.width = slider.value+"%";
+   }
+
+   window.onload = function() {
+   	moveDivisor();
+   };
+</script>
+
+
+
+
+
+<!-- Modal login  -->
+<script>
+   var modal = document.getElementById('modalLogin');
+   // When the user clicks anywhere outside of the modal, close it
+   window.onclick = function(event) {
+      if (event.target == modal) {
+         modal.style.display = "none";}}
+</script>
+
+
+<!-- Modals -->
+<script>
+function openNavbarNav() {
+   document.getElementById("navbarDropmenu").style.height = "250px";
+   document.getElementById("main").style.marginTop = "250px";
+   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";}
+
+function closeNavbarNav() {
+   document.getElementById("navbarDropmenu").style.height = "0";
+   document.getElementById("main").style.marginTop= "0";
+   document.body.style.backgroundColor = "white";}
+</script>
+
+
+
+<!-- Header Shrink -->
 <script type="text/javascript">
    window.onscroll = function() {
-      scrollFunction() };
+      scrollFunction()
+   };
    function scrollFunction() {
       if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-         document.getElementById("logoShrink").style.margin = "18px 0px";
+         document.getElementById("logoShrink").style.width = "224px";
+         document.getElementById("logoShrink").style.margin = "22px 0px";
          document.getElementById("navShrinkTabletPlus").style.padding = "10px 0px";
       } else {
-         document.getElementById("logoShrink").style.margin = "24px 0px";
+         document.getElementById("logoShrink").style.width = "240px";
+         document.getElementById("logoShrink").style.margin = "26px 0px";
          document.getElementById("navShrinkTabletPlus").style.padding = "12px 0px";
       } }
 </script>
-
-
-
-<!-- Nav Overlay -->
-<script>
-   function openNav() {
-     document.getElementById("myNav").style.height = "100%";}
-   function closeNav() {
-     document.getElementById("myNav").style.height = "0%";}
-</script>
-
-
-
-<!-- Scroll 2 Top -->
-<script type="text/javascript">
-   $(window).scroll(function() {
-      var height = $(window).scrollTop();
-      if (height > 1000) {
-         $('#back2Top').fadeIn();
-      } else {
-         $('#back2Top').fadeOut(); } });
-   $(document).ready(function() {
-      $("#back2Top").click(function(event) {
-         event.preventDefault();
-         $("html, body").animate({
-            scrollTop: 0
-         }, "slow");
-         return false; }); });
-</script>
-
-
-
-<!-- Slider -->
-<script>
-   var slideIndex = 1; showSlides(slideIndex);
-   function plusSlides(n) { showSlides(slideIndex += n);}
-   function currentSlide(n) { showSlides(slideIndex = n);}
-   function showSlides(n) {
-     var i;
-     var slides = document.getElementsByClassName("mySlides");
-     var dots = document.getElementsByClassName("slider-dot");
-     if (n > slides.length) {slideIndex = 1}
-     if (n < 1) {slideIndex = slides.length}
-     for (i = 0; i < slides.length; i++) {
-         slides[i].style.display = "none"; }
-     for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" active", "");}
-     slides[slideIndex-1].style.display = "block";
-     dots[slideIndex-1].className += " active";}
-</script>
-
 
 
 <!-- Accordion -->
@@ -344,6 +421,26 @@ $(function() {
 		if (!e.data.multiple) {
 			$el.find('.accordion__sub-link').not($next).slideUp().parent().removeClass('open'); }; }
 	var accordion = new Accordion($('#accordion'), false); });
+</script>
+
+
+<!-- Slider -->
+<script>
+   var slideIndex = 1; showSlides(slideIndex);
+   function plusSlides(n) { showSlides(slideIndex += n);}
+   function currentSlide(n) { showSlides(slideIndex = n);}
+   function showSlides(n) {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("slider-dot");
+     if (n > slides.length) {slideIndex = 1}
+     if (n < 1) {slideIndex = slides.length}
+     for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none"; }
+     for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");}
+     slides[slideIndex-1].style.display = "block";
+     dots[slideIndex-1].className += " active";}
 </script>
 
 </body>

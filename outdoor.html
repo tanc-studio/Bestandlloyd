@@ -4,15 +4,13 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-      <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700|Work+Sans:200,300,400,500,600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,600&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="webfonts/bl_optima_font.css">
+      <link rel="stylesheet" type="text/css" href="css/optima.css">
       <link rel="stylesheet" href="css/base.css">
       <link rel="stylesheet" href="css/components.css">
       <link rel="stylesheet" href="css/layout.css">
-      <script src="https://kit.fontawesome.com/99d1de5b91.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
          function includeHTML() {var z, i, elmnt, file, xhttp; z = document.getElementsByTagName("*"); for (i = 0; i < z.length; i++) { elmnt = z[i]; file = elmnt.getAttribute("w3-include-html"); if (file) { xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() {
          if (this.readyState == 4) { if (this.status == 200) {elmnt.innerHTML = this.responseText;} if (this.status == 404) {elmnt.innerHTML = "Page not found.";} elmnt.removeAttribute("w3-include-html"); includeHTML(); s} }
@@ -27,14 +25,13 @@
     <!-- Scroll to top -->
     <div id="back2Top"><svg class="icon"><use href="#icon-up" xlink:href="#icon-up"></use></svg></div>
     <!-- Main Start-->
-
     <main class="main main--products">
     <h1 class="page__heading">Outdoor Lights</h1>
    <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum officiis porro sed aut dignissimos facere tempore! Impedit obcaecati, magnam distinctio ea optio.</p>
    <div class="section__links">
       <a class="section__link" target="_blank" href="custom.html#finish--critchlow">Critchlow Finishes</a>
    </div>
-   <div class="products__grid wrap--wide">
+   <div class="grid-products wrap">
       <figure class="product__img__con"><img class="product__img" src="assets/products/Anenome_Ball_76_StainlessSteel.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
@@ -57,102 +54,121 @@
    </main>
 
 <!-- Footer -->
-   <div w3-include-html="includes/site-footer.html"></div>
+<div w3-include-html="includes/site-smedia-links.html"></div>
+<div w3-include-html="includes/site-footer.html"></div>
 
 
-<!-- + + + + + + + + + scripts + + + + + + + + +  -->
+   <!-- + + + + + + + + + scripts + + + + + + + + +  -->
+
+   <!-- HTML Include -->
+   <script> includeHTML(); </script>
+
+   <!-- Modal search -->
+   <script>
+      var modal = document.getElementById('modalSearch');
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+         if (event.target == modal) {
+            modal.style.display = "none";
+         }
+      }
+   </script>
+
+   <!-- Modal login  -->
+   <script>
+      var modal = document.getElementById('modalLogin');
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+         if (event.target == modal) {
+            modal.style.display = "none";}}
+   </script>
 
 
+   <!-- Modals -->
+   <script>
+   function openNavbarNav() {
+      document.getElementById("navbarDropmenu").style.height = "250px";
+      document.getElementById("main").style.marginTop = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";}
 
-<!-- HTML Include -->
-<script> includeHTML(); </script>
-
-
-
-<!-- Header Shrink--->
-<script type="text/javascript">
-   window.onscroll = function() {
-      scrollFunction() };
-   function scrollFunction() {
-      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-         document.getElementById("logoShrink").style.margin = "18px 0px";
-         document.getElementById("navShrinkTabletPlus").style.padding = "10px 0px";
-      } else {
-         document.getElementById("logoShrink").style.margin = "24px 0px";
-         document.getElementById("navShrinkTabletPlus").style.padding = "12px 0px";
-      } }
-</script>
+   function closeNavbarNav() {
+      document.getElementById("navbarDropmenu").style.height = "0";
+      document.getElementById("main").style.marginTop= "0";
+      document.body.style.backgroundColor = "white";}
+   </script>
 
 
-
-<!-- Nav Overlay -->
-<script>
-   function openNav() {
-     document.getElementById("myNav").style.height = "100%";}
-   function closeNav() {
-     document.getElementById("myNav").style.height = "0%";}
-</script>
-
-
-
-<!-- Scroll 2 Top -->
-<script type="text/javascript">
-   $(window).scroll(function() {
-      var height = $(window).scrollTop();
-      if (height > 1000) {
-         $('#back2Top').fadeIn();
-      } else {
-         $('#back2Top').fadeOut(); } });
-   $(document).ready(function() {
-      $("#back2Top").click(function(event) {
-         event.preventDefault();
-         $("html, body").animate({
-            scrollTop: 0
-         }, "slow");
-         return false; }); });
-</script>
+   <!-- Header Shrink -->
+   <script type="text/javascript">
+      window.onscroll = function() {
+         scrollFunction()
+      };
+      function scrollFunction() {
+         if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            document.getElementById("logoShrink").style.width = "224px";
+            document.getElementById("logoShrink").style.margin = "22px 0px";
+            document.getElementById("navShrinkTabletPlus").style.padding = "10px 0px";
+         } else {
+            document.getElementById("logoShrink").style.width = "240px";
+            document.getElementById("logoShrink").style.margin = "26px 0px";
+            document.getElementById("navShrinkTabletPlus").style.padding = "12px 0px";
+         } }
+   </script>
 
 
+   <!-- Headerbar Navigation--->
+   <script>
+      $("#menuBurger").click( function() {
+      	$(".burger").toggleClass("burger-close");
+         });
+   </script>
 
-<!-- Slider -->
-<script>
-   var slideIndex = 1; showSlides(slideIndex);
-   function plusSlides(n) { showSlides(slideIndex += n);}
-   function currentSlide(n) { showSlides(slideIndex = n);}
-   function showSlides(n) {
-     var i;
-     var slides = document.getElementsByClassName("mySlides");
-     var dots = document.getElementsByClassName("slider-dot");
-     if (n > slides.length) {slideIndex = 1}
-     if (n < 1) {slideIndex = slides.length}
-     for (i = 0; i < slides.length; i++) {
-         slides[i].style.display = "none"; }
-     for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" active", "");}
-     slides[slideIndex-1].style.display = "block";
-     dots[slideIndex-1].className += " active";}
-</script>
-
+   <script>
+         $('nav div').click(function() {
+             $('ul').slideToggle();
+             $('ul ul').css('display', 'none'); });
+         $('ul li').click(function() {
+             $('ul ul').slideUp();
+             $(this).find('ul').slideToggle(); });
+         $(window).resize(function() {
+             if($(window).width() > 765) {
+                 $('ul').removeAttr('style'); }});
+   </script>
 
 
-<!-- Accordion -->
-<script type="text/javascript">
-$(function() {
-	var Accordion = function(el, multiple) {
-		this.el = el || {};
-		this.multiple = multiple || false;
-		var links = this.el.find('.accordion__link');
-		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)}
-	Accordion.prototype.dropdown = function(e) {
-		var $el = e.data.el;
-			$this = $(this),
-			$next = $this.next();
-		$next.slideToggle();
-		$this.parent().toggleClass('open');
-		if (!e.data.multiple) {
-			$el.find('.accordion__sub-link').not($next).slideUp().parent().removeClass('open'); }; }
-	var accordion = new Accordion($('#accordion'), false); });
-</script>
+   <!-- See More Button -->
+   <script>
+   function myFunction() {
+     var dots = document.getElementById("viewMoreDots");
+     var moreText = document.getElementById("viewMoreTxt");
+     var btnText = document.getElementById("viewMoreBtn");
 
-</body>
-</html>
+     if (dots.style.display === "none") {
+       dots.style.display = "inline";
+       btnText.innerHTML = "Read more";
+       moreText.style.display = "none";
+     } else {
+       dots.style.display = "none";
+       btnText.innerHTML = "Read less";
+       moreText.style.display = "inline";
+     } }
+   </script>
+
+
+   <!-- Scroll 2 Top -->
+   <script type="text/javascript">
+      $(window).scroll(function() {
+         var height = $(window).scrollTop();
+         if (height > 200) {$('#back2Top').fadeIn();} else {
+            $('#back2Top').fadeOut();} });
+      $(document).ready(function() {
+         $("#back2Top").click(function(event) {
+            event.preventDefault();
+            $("html, body").animate({
+               scrollTop: 0
+            }, "slow");
+            return false; }); });
+   </script>
+
+   </body>
+   </html>

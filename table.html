@@ -4,15 +4,13 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-      <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700|Work+Sans:200,300,400,500,600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,600&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="webfonts/bl_optima_font.css">
+      <link rel="stylesheet" type="text/css" href="css/optima.css">
       <link rel="stylesheet" href="css/base.css">
       <link rel="stylesheet" href="css/components.css">
       <link rel="stylesheet" href="css/layout.css">
-      <script src="https://kit.fontawesome.com/99d1de5b91.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
          function includeHTML() {var z, i, elmnt, file, xhttp; z = document.getElementsByTagName("*"); for (i = 0; i < z.length; i++) { elmnt = z[i]; file = elmnt.getAttribute("w3-include-html"); if (file) { xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() {
          if (this.readyState == 4) { if (this.status == 200) {elmnt.innerHTML = this.responseText;} if (this.status == 404) {elmnt.innerHTML = "Page not found.";} elmnt.removeAttribute("w3-include-html"); includeHTML(); s} }
@@ -21,849 +19,864 @@
       <title>Best&amp;Lloyd</title>
    </head>
 <body>
-    <div class="svg-page" style="display:none;" w3-include-html="svg-files.html"></div>
-    <!-- Header -->
-    <div class="site-header" w3-include-html="includes/site-header.html"></div>
-    <!-- Scroll to top -->
-    <div id="back2Top"><svg class="icon"><use href="#icon-up" xlink:href="#icon-up"></use></svg></div>
-    <!-- Main Start-->
+   <div class="svg-page" style="display:none;" w3-include-html="svg-files.html"></div>
+   <!-- Header -->
+   <div class="site-header" w3-include-html="includes/site-header.html"></div>
+   <!-- Scroll to top -->
+   <div id="back2Top"><svg class="icon"><use href="#icon-up" xlink:href="#icon-up"></use></svg></div>
+   <!-- Main Start-->
 
-    <main class="main main--products">
+   <main class="main" id="main">
     <h1 class="page__heading">Table lights</h1>
 
-    <!-- Glass -->
-    <h2 class="page__sub-heading">Blown Glass</h2>
-    <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur explicabo eos maxime pariatur provident inventore, eum, neque eius, nobis ab quia minus perferendis, beatae.</p>
-    <div class="section__links">
-        <a class="section__link" href="custom.html#finish--glass">Glass Finishes</a>
-        <a class="section__link" href="custom.html#finish--metal">Metal Finishes</a>
-    </div>
-    <div class="products__grid wrap--wide">
-
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Chelsea_Table_Brass_Indigo.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Chelsea_Table_PolishedNickel_AntiqueRosw.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Chelsea_Table_PolishedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3  class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Flo_Large_Table_PolishedNickel_Indigo.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Flo_Large_Table_PolishedNickel_Olive.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Flo_Large_Table_PolishedNickel_Pink.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Flo_Small_Table_PolishedNickel_Indigo.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Flo_Small_Table_PolishedNickel_Red.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Flo_Small_Table_PolishedNickel_Steelblue.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Fig_Large_Table_PolishedNickel_Amythyst.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Fig_Small_Table_PolishedNickel_Green.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Fig_Small_Table_PolishedNickel_Mirrored.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Renaissance_Small_Table_PolishedNickel_Burgundy.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con"><img class="product__img" src="assets/products/Renaissance_Small_Table_PolishedNickel_Indigo.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con">
-           <img class="product__img" src="assets/products/Renaissance_Small_Table_PolishedNickel_Turquoise.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-       <figure class="product__img__con">
-          <img class="product__img" src="assets/products/Renaissance_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
-          <figcaption>
+   <!-- Glass -->
+   <h2 class="sub-heading">Blown &amp; Cut Glass</h2>
+   <p class="text--sm text--wrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur explicabo eos maxime pariatur provident inventore, eum, neque eius, nobis ab quia minus perferendis, beatae.</p>
+   <div class="text__links">
+      <a class="text__link" href="finishes.html#finish--glass">Blown Glass</a>
+      <a class="text__link" href="finishes.html#finish--cut-glass">Cut Glass</a>
+   </div>
+   <div class="grid-products wrap">
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Chelsea_Table_Brass_Indigo.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con product__tablet">
+         <img class="product__img" src="assets/products/Chelsea_Table_PolishedNickel_AntiqueRose.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con product__screen">
+         <img class="product__img" src="assets/products/Chelsea_Table_PolishedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finiswwhes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Flo_Large_Table_PolishedNickel_Indigo.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Flo_Large_Table_PolishedNickel_Olive.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Flo_Large_Table_PolishedNickel_Pink.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Flo_Small_Table_PolishedNickel_Indigo.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Flo_Small_Table_PolishedNickel_Red.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Flo_Small_Table_PolishedNickel_Steelblue.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Fig_Large_Table_PolishedNickel_Amythyst.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Fig_Small_Table_PolishedNickel_Green.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Fig_Small_Table_PolishedNickel_Mirrored.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Renaissance_Small_Table_PolishedNickel_Burgundy.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Renaissance_Small_Table_PolishedNickel_Indigo.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Renaissance_Small_Table_PolishedNickel_Turquoise.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Renaissance_Large_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con">
          <img class="product__img" src="assets/products/Encalmo_Table_PolishedNickel_OliveAndSteel_Blue.jpg" alt="Best and Lloyd Lighting Product">
-          <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-
-        <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Ball_Large_Table_PolishedNickel_Olive.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Ball_Large_Table_PolishedNickel_Snow.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Ball_Small_Table_PolishedNickel_Olive.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Ball_Small_Table_PolishedNickel_White.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Bottle_Table_PolishedNickel_Burgundy.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3  class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Bottle_Table_PolishedNickel_Purple.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-        <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Bottle_Table_PolishedNickel_Quartz.jpg" alt="Best and Lloyd Lighting Product">
-           <figcaption>
-             <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
-          </figcaption>
-       </figure>
-    </div>
-
-
-    <!-- Cut Glass -->
-   <h2 class="page__sub-heading">Cut Glass</h2>
-   <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur explicabo eos maxime pariatur provident inventore, eum, neque eius, nobis ab quia minus perferendis, beatae.</p>
-   <div class="section__links">
-      <a class="section__link" href="custom.html#finish--cut-glass">Glass Finishes</a>
-      <a class="section__link" href="custom.html#finish--Metal">Metal Finishes</a>
-      <a class="section__link" href="custom.html#finish--metal">Marble Finishes</a>
-   </div>
-   <div class="products__grid wrap--wide">
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_Large_PolishedNickel_Grey_Black.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_Large_PolishedNickel_Purple_Black.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Ball_Large_Table_PolishedNickel_Olive.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_Large_PolishedNickel_Red_Black.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Ball_Large_Table_PolishedNickel_Snow.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_PolishedBrass_Amber_Black.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Ball_Small_Table_PolishedNickel_Olive.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_PolishedNickel_Blue_White.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Ball_Small_Table_PolishedNickel_White.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_PolishedNickel_Clear_Black.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Bottle_Table_PolishedNickel_Burgundy.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel-Ball_Table_PolishedNickel_Pink.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Bottle_Table_PolishedNickel_Purple.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel-Ball_Table_PolishedNickel_Red.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Soda_Bottle_Table_PolishedNickel_Quartz.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel-Ball_Table_PolishedNickel_Tourmaline.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_Large_PolishedNickel_Grey_Granite.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel-Ball_Large_Table_PolishedNickel_Green.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_Large_PolishedNickel_Purple_Granite.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel-Ball_Large_Table_PolishedNickel_Grey.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_Large_PolishedNickel_Red_Granite.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel-Ball_Large_Table_PolishedNickel_Red.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_PolishedBrass_Amber_CarraraWhite.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_PolishedBrass_Amber_Granite.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Gem_Table_PolishedBrass_Pink_CarraraWhite.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel_Ball_Table_PolishedNickel_Pink.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel_Ball_Table_PolishedNickel_Red.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel_Ball_Table_PolishedNickel_Tourmaline.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel_Ball_Large_Table_PolishedNickel_Green.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel_Ball_Large_Table_PolishedNickel_Grey.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel_Ball_Large_Table_PolishedNickel_Red.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel_Table_PolishedNickel_Grey.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel_Table_PolishedNickel_Olive.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Jewel_Table_PolishedNickel_Pink.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
    </div>
 
-
-    <!-- Critchlow -->
-   <h2 class="page__sub-heading">Critchlow</h2>
-   <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum officiis porro sed aut dignissimos facere tempore! Impedit obcaecati, magnam distinctio ea optio.</p>
-   <div class="section__links">
-      <a class="section__link" target="_blank" href="custom.html#finish--critchlow">Critchlow Finishes</a>
-   </div>
-   <div class="products__grid wrap--wide">
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Anenome_MB_Large_Table_GoldenBronze.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Anenome_MB_Large_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Anenome_Small_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Anenome_Ball_76_StainlessSteel.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Anenome_Ball_MB_Large_Table_GoldenBronze.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-   </div>
-
-
-    <!-- Wood -->
-   <h2 class="page__sub-heading">Critchlow</h2>
-   <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit fugiat voluptates iste. Tempora nemo, quod illum dolor numquam fugiat, culpa quaerat.</p>
-   <div class="section__links">
-      <a class="section__link" href="custom.html#finish--wood">Wood Finishes</a>
-      <a class="section__link" href="custom.html#metal--wood">Metal Finishes</a>
-   </div>
-   <div class="products__grid wrap--wide">
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Campo_Table_PolishedNickel_Cherry.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Pisa_Table_PolishedNickel_Mahogany.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Scott_Table_PolishedNickel_Mahogany.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Mies_Table_PolishedNickel_Walnut.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Ben_Table_PolishedNickel_Walnut.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-   </div>
-
-
-    <!-- Leather -->
-    <h2 class="page__sub-heading">Leather</h2>
-    <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
-    <div class="section__links">
-        <a class="section__link" href="custom.html#finish--leather">Leather Finishes</a>
-        <a class="section__link" href="custom.html#finish--metal">Metal Finishes</a>
-    </div>
-    <div class="products__grid wrap--wide">
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Berlin_Large_Table_PolishedNickel_Chocolate.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Tripod_Table_PolishedNickel_Black.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Heron_Table_AntiqueBrass_Chocolate.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Heron_Table_PolishedNickel_Tan.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Heron_Table_PolishedNickel_Tan.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Heron_Table_PolishedNickel_Tan.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Flexi_3_Watt_Table_PolishedBrass_Red.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Flexi_3_Watt_Table_PolishedNickel_Chocolate.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Flexi_Table_BrushedBrass_Green.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Milan_Table_BronzeRelief_Black.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Milan_Table_Chrome_Green.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Milan_Table_PolishedBrass_Burgundy.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Odeon_Table_Bronze_Black.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Odeon_Table_BrushedBrass_Red.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Siena_Table_PolishedNickel_Black.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-    </div>
-
-
-      <!-- Metal -->
-    <h2 class="page__sub-heading">Metal</h2>
-    <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
-    <div class="section__links">
-        <a class="section__link" href="custom.html#finish--metal">Metal Finishes</a>
-    </div>
-    <div class="products__grid wrap--wide">
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Krisskross_Large_Table_PolishedBrass.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Krisskross_Small_Table_PolishedBrass.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Krisskross_Small_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Cardin_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-    </div>
-
-
-    <!-- Metal & Glass -->
-    <h2 class="page__sub-heading">Metal &amp; Glass</h2>
-    <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
-    <div class="section__links">
-        <a class="section__link" href="custom.html#finish--metal">Metal Finishes</a>
-        <a class="section__link" href="custom.html#finish--glass">Glass Finishes</a>
-    </div>
-    <div class="products__grid wrap--wide">
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Lens_Small_Table_Bronze_Black.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Lens_Small_Table_BrushedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Lens_Small_Table_PolishedNickel_Black.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Diamond_Table_PolishedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Ring_Table_Nickel_Black.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Ring_Table_Nickel_Clear_Black.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-    </div>
-
-
-    <!-- Eglomise -->
-    <h2 class="page__sub-heading">Eglomise</h2>
-    <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
-    <div class="section__links">
-        <a class="section__link" href="custom.html#finish--metal">Metal Finishes</a>
-    </div>
-    <div class="products__grid wrap--wide">
-
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Eaton_Table_Bronze.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Eaton_Table_Bronze.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Eaton_Table_Bronze.jpg" alt="Best and Lloyd Lighting Product">
-         <figcaption>
-            <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
-         </figcaption>
-      </figure>
-    </div>
-
-
-    <!-- Crystal -->
-    <h2 class="page__sub-heading">Crystal</h2>
-    <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
-    <div class="section__links">
-        <a class="section__link" href="custom.html#finish--crystal">Crystal Finishes</a>
-    </div>
-    <div class="products__grid wrap--wide">
+   <!-- Crystal -->
+   <h2 class="sub-heading">Crystal</h2>
+   <p class="text--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
+   <div class="text__links"><a href="finishes.html#finish--leather">Crystal Finishes</a></div>
+   <div class="grid-products wrap">
       <figure class="product__img__con"><img class="product__img" src="assets/products/Orvieto_Table_PolishedBrass_Amber.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Orvieto_Table_PolishedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Jazz_Table_PolishedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Venice_Table_PolishedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Vetro_Large_Table_PolishedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Vetro_Lines_Large_Table_PolishedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Vetro_Small_Table_PolishedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Vienna_Large_Table_PolishedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+   </div>
+
+   <!-- Critchlow -->
+   <h2 class="sub-heading">Critchlow</h2>
+   <p class="text--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum officiis porro sed aut dignissimos facere tempore! Impedit obcaecati, magnam distinctio ea optio.</p>
+   <div class="text__links"><a href="finishes.html#finish--critchlow">Crtitchlow Spheres</a></div>
+   <div class="grid-products wrap">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Anenome_24_Table_WarmGold.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Anenome_30_MB_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Anenome_36_Table_WarmGold.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Anenome_76_SculpturalBall_StainlessSteel.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Beluga_Table_PolisheNickel.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+   </div>
+
+   <!-- Wood -->
+   <h2 class="sub-heading">Wood</h2>
+   <p class="text--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit fugiat voluptates iste. Tempora nemo, quod illum dolor numquam fugiat, culpa quaerat.</p>
+   <div class="text__links"><a href="finishes.html#finish--wood">Wood Finishes</a></div>
+   <div class="grid-products wrap">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Campo_Table_PolishedNickel_Cherry.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Pisa_Table_PolishedNickel_Mahogany.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Scott_Table_PolishedNickel_Mahogany.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Mies_Table_PolishedNickel_Walnut.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Ben_Table_PolishedNickel_Walnut.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+   </div>
+
+   <!-- Leather -->
+   <h2 class="sub-heading">Leather</h2>
+   <p class="text--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
+   <div class="text__links"><a href="finishes.html#finish--leather">Leather Finishes</a></div>
+   <div class="grid-products wrap">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Berlin_Large_Table_PolishedNickel_Chocolate.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Tripod_Table_PolishedNickel_Black.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Heron_Table_AntiqueBrass_Chocolate.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Heron_Table_PolishedNickel_Tan.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Heron_Table_Bronze_DarkGreen.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Flexi_3W_Table_PolishedNickel_Burgundy.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Flexi_3W_Table_PolishedNickel_Chocolate.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Flexi_3W_Table_PolishedBrass_Red.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Milan_Table_BronzeRelief_Black.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Milan_Table_Chrome_DarkGreen.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Milan_Table_PolishedBrass_Burgundy.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Odeon_Table_Bronze_Black.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Odeon_Table_BrushedBrass_Red.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Siena_Table_PolishedNickel_Black.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
     </div>
 
-
-    <!-- Ceramic -->
-    <h2 class="page__sub-heading">Ceramic</h2>
-    <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
-    <div class="section__links">
-        <a class="section__link" href="custom.html#finish--metal">Metal Finishes</a>
-    </div>
-    <div class="products__grid wrap--wide">
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Constance_Table_Bronze.jpg" alt="Best and Lloyd Lighting Product">
+   <!-- Metal -->
+   <h2 class="sub-heading">Metal</h2>
+   <p class="text--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
+   <div class="text__links"><a href="finishes.html#finish--metal">Metal Finishes</a></div>
+   <div class="grid-products wrap">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Krisskross_Large_Table_PolishedBrass.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Krisskross_Small_Table_PolishedBrass.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Krisskross_Small_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Cardin_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+    </div>
+
+   <!-- Metal & Glass -->
+   <h2 class="sub-heading">Metal &amp; Glass</h2>
+   <p class="text--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
+   <div class="text__links"><a href="finishes.html#finish--leather">Metal Finishes</a><a href="finishes.html#finish--Crystal">Crystal Finishes</a></div>
+   <div class="grid-products wrap">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Lens_Small_Table_Bronze_Black.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Lens_Small_Table_BrushedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Lens_Small_Table_PolishedNickel_Black.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Diamond_Table_PolishedNickel_Clear.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Ring_Table_PolishedBrass_Granite.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Ring_Table_PolishedNickel_Clear_Granite.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Ring_Table_PolishedBrass_Granite.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Eaton_Table_Bronze.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Hyalos_Table_PolishedNickel_RockCrystal.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Hyalos</h3>
+            <p class="product__finish">Finish</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con">
+         <img class="product__img" src="assets/products/Hyalos_Table_PolishedBrass_RoseQuartz.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Hyalos</h3>
+            <p class="product__finish">Finish</p>
+         </figcaption>
+      </figure>
+    </div>
+
+   <!-- Ceramic -->
+   <h2 class="sub-heading">Ceramic</h2>
+   <p class="text--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
+   <div class="grid-products wrap">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Constance_Small_Bronze_Porcelain.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Constance_Small_PolishedBrass_Porcelain.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
+         </figcaption>
+      </figure>
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Constance_Table_Bronze_Porcelain.jpg" alt="Best and Lloyd Lighting Product">
+         <figcaption>
+            <h3 class="product__name--sm">Product Name</h3>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Francesca_Table_Bronze.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Sara_Table_Bronze.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Sara_Table_Bronze_Porcelain.jpg" alt="Best and Lloyd Lighting Product">
          <figcaption>
             <h3 class="product__name--sm">Product Name</h3>
-            <p class="product__finish">Product Finishes</p>
+            <p class="product__finish">Finishes</p>
          </figcaption>
       </figure>
     </div>
 
-
-    <!-- Fromental -->
-    <h2 class="page__sub-heading">Fromental</h2>
-    <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
-    <div class="section__links">
-        <a class="section__link" href="custom.html#finish--metal">Metal Finishes</a>
-    </div>
-    <div class="products__grid wrap--wide">
+   <!-- Fromental -->
+   <h2 class="sub-heading">Fromental</h2>
+   <p class="text--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
+   <div class="grid-products wrap">
       <figure class="product__img__con"><img class="product__img" src="assets/products/Fromental_Babinda_Table_AntiqueBrass.jpg" alt="Best and Lloyd Lighting Product">
           <figcaption>
              <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
+             <p class="product__finish">Finishes</p>
           </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Fromental_Prunis_Round_Table_Bronze.jpg" alt="Best and Lloyd Lighting Product">
           <figcaption>
              <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
+             <p class="product__finish">Finishes</p>
           </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Fromental_Prunis_Square_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
           <figcaption>
              <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
+             <p class="product__finish">Finishes</p>
           </figcaption>
       </figure>
     </div>
 
-
-    <!-- Guggisberg -->
-    <h2 class="page__sub-heading">Baldwin Guggisberg</h2>
-    <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
-    <div class="section__links">
-        <a class="section__link" href="custom.html#finish--metal">Metal Finishes</a>
-    </div>
-    <div class="products__grid wrap--wide">
+   <!-- Guggisberg -->
+   <h2 class="sub-heading">Baldwin Guggisberg</h2>
+   <p class="text--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
+   <div class="grid-products wrap">
       <figure class="product__img__con"><img class="product__img" src="assets/products/Guggisberg_Damasco_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
           <figcaption>
              <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
+             <p class="product__finish">Finishes</p>
           </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Guggisberg_Gradinata_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
           <figcaption>
              <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
+             <p class="product__finish">Finishes</p>
           </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Guggisberg_Noce_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
           <figcaption>
              <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
+             <p class="product__finish">Finishes</p>
           </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Guggisberg_Onde_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
           <figcaption>
              <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
+             <p class="product__finish">Finishes</p>
           </figcaption>
       </figure>
       <figure class="product__img__con"><img class="product__img" src="assets/products/Guggisberg_Scilla_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
           <figcaption>
              <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
+             <p class="product__finish">Finishes</p>
           </figcaption>
       </figure>
-      <figure class="product__img__con"><img class="product__img" src="assets/products/Thaleia_II_Table_PolishedNickel_Blue.jpg" alt="Best and Lloyd Lighting Product">
+      <figure class="product__img__con"><img class="product__img" src="assets/products/Guggisberg_Thaleia_II_Table_PolishedNickel_Blue.jpg" alt="Best and Lloyd Lighting Product">
           <figcaption>
              <h3 class="product__name--sm">Product Name</h3>
-             <p class="product__finish">Product Finishes</p>
+             <p class="product__finish">Finishes</p>
           </figcaption>
       </figure>
     </div>
 
-
-    <!-- Cast Metal -->
-    <h2 class="page__sub-heading">Cast Metal</h2>
-    <p class="p-max">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
-    <div class="section__links">
-        <a class="section__link" href="custom.html#metal--crystal">Metal Finishes</a>
-    </div>
-    <div class="products__grid wrap--wide">
+   <!-- Cast Metal -->
+   <h2 class="sub-heading">Cast Metal</h2>
+   <p class="text--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, maxime accusantium quos molestiae beatae rem architecto aspernatur minus laboriosam! Illum, quasi!</p>
+   <div class="text__links"><a href="finishes.html#finish--metal">Metal Finishes</a></div>
+   <div class="grid-products wrap">
          <figure class="product__img__con"><img class="product__img" src="assets/products/Daisy_Table_Bronze.jpg" alt="Best and Lloyd Lighting Product">
             <figcaption>
                <h3 class="product__name--sm">Product Name</h3>
-               <p class="product__finish">Product Finishes</p>
+               <p class="product__finish">Finishes</p>
             </figcaption>
          </figure>
          <figure class="product__img__con"><img class="product__img" src="assets/products/Daisy_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
             <figcaption>
                <h3 class="product__name--sm">Product Name</h3>
-               <p class="product__finish">Product Finishes</p>
+               <p class="product__finish">Finishes</p>
             </figcaption>
          </figure>
          <figure class="product__img__con"><img class="product__img" src="assets/products/Soleil_Table_Bronze.jpg" alt="Best and Lloyd Lighting Product">
             <figcaption>
                <h3 class="product__name--sm">Product Name</h3>
-               <p class="product__finish">Product Finishes</p>
+               <p class="product__finish">Finishes</p>
             </figcaption>
          </figure>
-         <figure class="product__img__con"><img class="product__img" src="assets/products/Eternity_Table_Gold.jpg" alt="Best and Lloyd Lighting Product">
+         <figure class="product__img__con"><img class="product__img" src="assets/products/Soleil_Table_GoldLeaf24K.jpg" alt="Best and Lloyd Lighting Product">
             <figcaption>
                <h3 class="product__name--sm">Product Name</h3>
-               <p class="product__finish">Product Finishes</p>
+               <p class="product__finish">Finishes</p>
+            </figcaption>
+         </figure>
+         <figure class="product__img__con"><img class="product__img" src="assets/products/Eternity_Table_Gold24K.jpg" alt="Best and Lloyd Lighting Product">
+            <figcaption>
+               <h3 class="product__name--sm">Product Name</h3>
+               <p class="product__finish">Finishes</p>
             </figcaption>
          </figure>
          <figure class="product__img__con"><img class="product__img" src="assets/products/Eternity_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
             <figcaption>
                <h3 class="product__name--sm">Product Name</h3>
-               <p class="product__finish">Product Finishes</p>
+               <p class="product__finish">Finishes</p>
             </figcaption>
          </figure>
-         <figure class="product__img__con"><img class="product__img" src="assets/products/Felix_Table_Brass.jpg" alt="Best and Lloyd Lighting Product">
+         <figure class="product__img__con"><img class="product__img" src="assets/products/Felix_Table_Bronze_MarronCohiba.jpg" alt="Best and Lloyd Lighting Product">
             <figcaption>
                <h3 class="product__name--sm">Product Name</h3>
-               <p class="product__finish">Product Finishes</p>
+               <p class="product__finish">Finishes</p>
             </figcaption>
          </figure>
-         <figure class="product__img__con"><img class="product__img" src="assets/products/Felix_Table_Bronze.jpg" alt="Best and Lloyd Lighting Product">
+         <figure class="product__img__con"><img class="product__img" src="assets/products/Felix_Table_PolishedBrass_MarronCohiba.jpg" alt="Best and Lloyd Lighting Product">
             <figcaption>
                <h3 class="product__name--sm">Product Name</h3>
-               <p class="product__finish">Product Finishes</p>
+               <p class="product__finish">Finishes</p>
             </figcaption>
          </figure>
-         <figure class="product__img__con"><img class="product__img" src="assets/products/Felix_Table_PolishedNickel.jpg" alt="Best and Lloyd Lighting Product">
+         <figure class="product__img__con"><img class="product__img" src="assets/products/Felix_Table_PolishedNickel_MarronCohiba.jpg" alt="Best and Lloyd Lighting Product">
             <figcaption>
                <h3 class="product__name--sm">Product Name</h3>
-               <p class="product__finish">Product Finishes</p>
+               <p class="product__finish">Finishes</p>
             </figcaption>
          </figure>
       </div>
       </div>
-   </main>
+</main>
+
+
 
 <!-- Footer -->
-   <div w3-include-html="includes/site-footer.html"></div>
+<div w3-include-html="includes/site-smedia-links.html"></div>
+<div w3-include-html="includes/site-footer.html"></div>
 
 
 <!-- + + + + + + + + + scripts + + + + + + + + +  -->
 
-
-
 <!-- HTML Include -->
 <script> includeHTML(); </script>
 
+<!-- Modal search -->
+<script>
+   var modal = document.getElementById('modalSearch');
+   // When the user clicks anywhere outside of the modal, close it
+   window.onclick = function(event) {
+      if (event.target == modal) {
+         modal.style.display = "none";
+      }
+   }
+</script>
 
 
-<!-- Header Shrink--->
+<!-- Modals -->
+<script>
+function openNavbarNav() {
+   document.getElementById("navbarDropmenu").style.height = "250px";
+   document.getElementById("main").style.marginTop = "250px";
+   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";}
+
+function closeNavbarNav() {
+   document.getElementById("navbarDropmenu").style.height = "0";
+   document.getElementById("main").style.marginTop= "0";
+   document.body.style.backgroundColor = "white";}
+</script>
+
+
+
+<!-- Header Shrink -->
 <script type="text/javascript">
    window.onscroll = function() {
-      scrollFunction() };
+      scrollFunction()
+   };
    function scrollFunction() {
       if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-         document.getElementById("logoShrink").style.margin = "18px 0px";
+         document.getElementById("logoShrink").style.width = "224px";
+         document.getElementById("logoShrink").style.margin = "22px 0px";
          document.getElementById("navShrinkTabletPlus").style.padding = "10px 0px";
       } else {
-         document.getElementById("logoShrink").style.margin = "24px 0px";
+         document.getElementById("logoShrink").style.width = "240px";
+         document.getElementById("logoShrink").style.margin = "26px 0px";
          document.getElementById("navShrinkTabletPlus").style.padding = "12px 0px";
       } }
 </script>
 
 
-
-<!-- Nav Overlay -->
+<!-- Headerbar Navigation--->
 <script>
-   function openNav() {
-     document.getElementById("myNav").style.height = "100%";}
-   function closeNav() {
-     document.getElementById("myNav").style.height = "0%";}
+   $("#menuBurger").click( function() {
+      $(".burger").toggleClass("burger-close");
+      });
 </script>
 
+<script>
+   $('nav div').click(function() {
+       $('ul').slideToggle();
+       $('ul ul').css('display', 'none'); });
+   $('ul li').click(function() {
+       $('ul ul').slideUp();
+       $(this).find('ul').slideToggle(); });
+   $(window).resize(function() {
+       if($(window).width() > 765) {
+           $('ul').removeAttr('style'); }});
+</script>
+
+
+<!-- See More Button -->
+<script>
+function myFunction() {
+  var dots = document.getElementById("viewMoreDots");
+  var moreText = document.getElementById("viewMoreTxt");
+  var btnText = document.getElementById("viewMoreBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  } }
+</script>
 
 
 <!-- Scroll 2 Top -->
 <script type="text/javascript">
    $(window).scroll(function() {
       var height = $(window).scrollTop();
-      if (height > 1000) {
-         $('#back2Top').fadeIn();
-      } else {
-         $('#back2Top').fadeOut(); } });
+      if (height > 200) {$('#back2Top').fadeIn();} else {
+         $('#back2Top').fadeOut();} });
    $(document).ready(function() {
       $("#back2Top").click(function(event) {
          event.preventDefault();
@@ -871,48 +884,6 @@
             scrollTop: 0
          }, "slow");
          return false; }); });
-</script>
-
-
-
-<!-- Slider -->
-<script>
-   var slideIndex = 1; showSlides(slideIndex);
-   function plusSlides(n) { showSlides(slideIndex += n);}
-   function currentSlide(n) { showSlides(slideIndex = n);}
-   function showSlides(n) {
-     var i;
-     var slides = document.getElementsByClassName("mySlides");
-     var dots = document.getElementsByClassName("slider-dot");
-     if (n > slides.length) {slideIndex = 1}
-     if (n < 1) {slideIndex = slides.length}
-     for (i = 0; i < slides.length; i++) {
-         slides[i].style.display = "none"; }
-     for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" active", "");}
-     slides[slideIndex-1].style.display = "block";
-     dots[slideIndex-1].className += " active";}
-</script>
-
-
-
-<!-- Accordion -->
-<script type="text/javascript">
-$(function() {
-	var Accordion = function(el, multiple) {
-		this.el = el || {};
-		this.multiple = multiple || false;
-		var links = this.el.find('.accordion__link');
-		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)}
-	Accordion.prototype.dropdown = function(e) {
-		var $el = e.data.el;
-			$this = $(this),
-			$next = $this.next();
-		$next.slideToggle();
-		$this.parent().toggleClass('open');
-		if (!e.data.multiple) {
-			$el.find('.accordion__sub-link').not($next).slideUp().parent().removeClass('open'); }; }
-	var accordion = new Accordion($('#accordion'), false); });
 </script>
 
 </body>

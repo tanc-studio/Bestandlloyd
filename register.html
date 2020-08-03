@@ -4,14 +4,13 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-      <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700|Work+Sans:200,300,400,500,600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,600&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.typekit.net/wfy1nvy.css">
+      <link rel="stylesheet" type="text/css" href="css/optima.css">
       <link rel="stylesheet" href="css/base.css">
       <link rel="stylesheet" href="css/components.css">
       <link rel="stylesheet" href="css/layout.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
          function includeHTML() {var z, i, elmnt, file, xhttp; z = document.getElementsByTagName("*"); for (i = 0; i < z.length; i++) { elmnt = z[i]; file = elmnt.getAttribute("w3-include-html"); if (file) { xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() {
          if (this.readyState == 4) { if (this.status == 200) {elmnt.innerHTML = this.responseText;} if (this.status == 404) {elmnt.innerHTML = "Page not found.";} elmnt.removeAttribute("w3-include-html"); includeHTML(); s} }
@@ -35,59 +34,121 @@
    </div>
 
 <!-- Footer -->
-   <div w3-include-html="includes/site-footer.html"></div>
+<div w3-include-html="includes/site-smedia-links.html"></div>
+<div w3-include-html="includes/site-footer.html"></div>
 
 
-<!-- + + + + + + + + + scripts + + + + + + + + +  -->
+   <!-- + + + + + + + + + scripts + + + + + + + + +  -->
 
-<!-- HTML Include -->
-<script> includeHTML(); </script>
+   <!-- HTML Include -->
+   <script> includeHTML(); </script>
 
-<!-- Header Shrink--->
-<script type="text/javascript">
-   window.onscroll = function() {
-      scrollFunction()
-   };
-   function scrollFunction() {
-      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-         document.getElementById("navShrink").style.padding = "2px 0px";
-         document.getElementById("logoShrink").style.margin = "18px 0px";
-         document.getElementById("navShrinkTabletPlus").style.padding = "10px 0px";
-      } else {
-         document.getElementById("navShrink").style.padding = "3px 0px";
-         document.getElementById("logoShrink").style.margin = "24px 0px";
-         document.getElementById("navShrinkTabletPlus").style.padding = "12px 0px";
-      } }
-</script>
-
-<!-- Nav Overlay -->
-<script>
-   function openNav() {
-     document.getElementById("myNav").style.height = "100%";}
-   function closeNav() {
-     document.getElementById("myNav").style.height = "0%";}
-</script>
-
-
-<!-- Scroll 2 Top -->
-<script type="text/javascript">
-   $(window).scroll(function() {
-      var height = $(window).scrollTop();
-      if (height > 200) {
-         $('#back2Top').fadeIn();
-      } else {
-         $('#back2Top').fadeOut();
+   <!-- Modal search -->
+   <script>
+      var modal = document.getElementById('modalSearch');
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+         if (event.target == modal) {
+            modal.style.display = "none";
+         }
       }
-   });
-   $(document).ready(function() {
-      $("#back2Top").click(function(event) {
-         event.preventDefault();
-         $("html, body").animate({
-            scrollTop: 0
-         }, "slow");
-         return false;
-      });
-   });
-</script>
-</body>
-</html>
+   </script>
+
+   <!-- Modal login  -->
+   <script>
+      var modal = document.getElementById('modalLogin');
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+         if (event.target == modal) {
+            modal.style.display = "none";}}
+   </script>
+
+
+   <!-- Modals -->
+   <script>
+   function openNavbarNav() {
+      document.getElementById("navbarDropmenu").style.height = "250px";
+      document.getElementById("main").style.marginTop = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";}
+
+   function closeNavbarNav() {
+      document.getElementById("navbarDropmenu").style.height = "0";
+      document.getElementById("main").style.marginTop= "0";
+      document.body.style.backgroundColor = "white";}
+   </script>
+
+
+   <!-- Header Shrink -->
+   <script type="text/javascript">
+      window.onscroll = function() {
+         scrollFunction()
+      };
+      function scrollFunction() {
+         if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            document.getElementById("logoShrink").style.width = "224px";
+            document.getElementById("logoShrink").style.margin = "22px 0px";
+            document.getElementById("navShrinkTabletPlus").style.padding = "10px 0px";
+         } else {
+            document.getElementById("logoShrink").style.width = "240px";
+            document.getElementById("logoShrink").style.margin = "26px 0px";
+            document.getElementById("navShrinkTabletPlus").style.padding = "12px 0px";
+         } }
+   </script>
+
+
+   <!-- Headerbar Navigation--->
+   <script>
+      $("#menuBurger").click( function() {
+      	$(".burger").toggleClass("burger-close");
+         });
+   </script>
+
+   <script>
+         $('nav div').click(function() {
+             $('ul').slideToggle();
+             $('ul ul').css('display', 'none'); });
+         $('ul li').click(function() {
+             $('ul ul').slideUp();
+             $(this).find('ul').slideToggle(); });
+         $(window).resize(function() {
+             if($(window).width() > 765) {
+                 $('ul').removeAttr('style'); }});
+   </script>
+
+
+   <!-- See More Button -->
+   <script>
+   function myFunction() {
+     var dots = document.getElementById("viewMoreDots");
+     var moreText = document.getElementById("viewMoreTxt");
+     var btnText = document.getElementById("viewMoreBtn");
+
+     if (dots.style.display === "none") {
+       dots.style.display = "inline";
+       btnText.innerHTML = "Read more";
+       moreText.style.display = "none";
+     } else {
+       dots.style.display = "none";
+       btnText.innerHTML = "Read less";
+       moreText.style.display = "inline";
+     } }
+   </script>
+
+
+   <!-- Scroll 2 Top -->
+   <script type="text/javascript">
+      $(window).scroll(function() {
+         var height = $(window).scrollTop();
+         if (height > 200) {$('#back2Top').fadeIn();} else {
+            $('#back2Top').fadeOut();} });
+      $(document).ready(function() {
+         $("#back2Top").click(function(event) {
+            event.preventDefault();
+            $("html, body").animate({
+               scrollTop: 0
+            }, "slow");
+            return false; }); });
+   </script>
+
+   </body>
+   </html>

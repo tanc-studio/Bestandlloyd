@@ -1,67 +1,62 @@
 <div class="icon-page" w3-include-html="svg-files.html"></div>
-<header class="header">
 
-   <!-- Header Top -->
+<!-- Header
+------------------------------------------------------------------------------->
+<header class="header">
    <div class="header__top">
-      <div class="header-wrap">
+      <div class="header__wrap">
          <div class="header__links">
             <button class="header__link btn--hide" onclick="document.getElementById('modalLogin').style.display='block'">Clients</button>
-            <a class="header__link header--register view--fullscreen" href="register.html">Register</a>
+            <a class="header__link header--register" href="register.html">Register</a>
          </div>
-         <div class="header__logo">
-            <a href="index.html">
-               <img id="logoShrink" src="assets/svg/bestandlloyd.png" alt="Best&Lloyd Logo">
-            </a>
-         </div>
-         <div class="header__links ">
-            <a class="header__link header--findus view--fullscreen" href="findus.html">Find Us</a>
+         <a class="header__logo__outer" href="index.html">
+            <img class="header__logo" id="logoShrink" src="assets/svg/logo-3.svg" alt="Best&Lloyd Logo">
+         </a>
+         <div class="header__links">
+            <a class="header__link header--findus" href="findus.html">Find Us</a>
             <button class="header__link btn--hide" onclick="document.getElementById('modalSearch').style.display='block'">Search</button>
          </div>
       </div>
    </div>
-
-   <!-- Navbar -->
-   <div  class="navbar">
-   <!-- Navbar left-->
-      <div class="navbar__left" style="opacity: 0;">
-         <svg class="icon"><use href="#icon-search" xlink:href="#icon-search"></use></svg>
-      </div>
+   <div class="navbar">
       <nav class="menu">
-         <!-- Burger -->
          <div class="menu__burger">
-            <input type="checkbox" class="toggler">
+            <input class="menu__toggler" type="checkbox">
             <div class="burger"><div></div></div>
          </div>
-         <!-- Menu -->
          <ul class="menu__list">
-            <!-- <hr class="content--mobile"> -->
+            <li class="menu__search">
+               <section class="form__searchbox">
+                  <input class="form__input form__input--inline" type="text" placeholder="Search" name="search">
+                  <button class="btn btn--form" type="submit">
+                     <svg class="icon icon--gold"><use href="#icon-search" xlink:href="#icon-search"></use></svg>
+                  </button>
+               </section>
+            </li>
             <li class="menu__item"><a class="menu__link" href="#">Products</a>
                <ul class="menu__sub-list">
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="product-page.html">New</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="all.html">All</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="product-page.html">Product Page</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="table.html">Table</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="wall.html">Wall</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="floor.html">Floor</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="pendant.html">Pendant</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="outdoor.html">Outdoor</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="tablesmirrors.html">Tables &amp; Mirrors</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="accessories.html">Accessories</a></li>
-               </ul>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="#">Discover</a>
-               <ul class="menu__sub-list">
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="heritage.html">Heritage</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="ethos.html">Ethos</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="designers.html">Designers</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="info.html">Info</a></li>
                </ul>
             </li>
             <li class="menu__item"><a class="menu__link" href="#">Custom</a>
                <ul class="menu__sub-list">
                   <li class="menu__sub-item"><a class="menu__sub-link" href="custom.html">Custom</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="custom.html#pg-finishes">Finishes</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="finishes.html">Finishes</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="shades.html">Shades</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="schemeboard.html">Schemeboard</a></li>
+               </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Discover</a>
+               <ul class="menu__sub-list">
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="heritage.html">Heritage</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="designers.html">Designers</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="info.html">Info</a></li>
                </ul>
             </li>
             <li class="menu__item"><a class="menu__link" href="#">Latest</a>
@@ -76,9 +71,45 @@
          </ul>
       </nav>
       <div class="navbar__right">
-         <svg class="icon" onclick="document.getElementById('modalSearch').style.display='block'">
-            <use href="#icon-search" xlink:href="#icon-search"></use>
-         </svg>
+         <a class="navbar__schemeboard" href="schemeboard.html">Schemeboard</a>
+      </div>
+      <div class="navbar__left">
+         <a class="navbar__back" href="schemeboard.html">Back</a>
+      </div>
+   </div>
+
+   <div id="modalLogin" class="modal-bg">
+      <div class="modal--login">
+         <div class="modal__close" onclick="document.getElementById('modalLogin').style.display='none'">
+            <svg class="icon icon--gold"><use href="#icon-close" xlink:href="#icon-close"></use></svg>
+         </div>
+         <form class="form form--dark" action="*">
+            <label class="form__label" for="uname">Username</label>
+            <input class="form__input" type="text" placeholder="Enter Username" name="uname" required>
+            <label class="form__label" for="psw">Password</label>
+            <input class="form__input" type="password" placeholder="Enter Password" name="psw" required>
+            <button class="btn btn--form" type="submit">Login</button>
+            <label class="form__checkbox">
+              <input type="checkbox" style="margin-top: 1.5rem;" checked="checked" name="remember">
+              <p class="form__checkbox__txt">Remember me</p>
+            </label>
+         </form>
+      </div>
+   </div>
+   <div id="modalSearch" class="modal-bg">
+      <div class="modal--search">
+         <div class="modal__close" onclick="document.getElementById('modalSearch').style.display='none'" title="Close Modal">
+            <svg class="icon icon--gold"><use href="#icon-close" xlink:href="#icon-close"></use></svg>
+         </div>
+         <form class="form form--dark" action="*">
+            <label class="form__label" for="psw">Search</label>
+            <div class="form__searchbox">
+               <input class="form__input form__input--inline" type="text" placeholder="Search" name="search">
+               <button class="btn btn--form" type="submit">
+                  <svg class="icon icon--gold"><use href="#icon-search" xlink:href="#icon-search"></use></svg>
+               </button>
+            </div>
+         </form>
       </div>
    </div>
 </header>

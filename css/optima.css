@@ -1,0 +1,41 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3906307, 2020-05-23T18:32:49-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: OptimaLTPro-Roman by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/optima/pro-roman2/
+ *
+ * Webfont: OptimaLTPro-Medium by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/optima/pro-medium/
+ *
+ * Webfont: OptimaLTPro-DemiBold by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/optima/pro-demi-bold/
+ *
+ *
+ * Webfonts copyright: Copyright &amp;#x00A9; 2014 Monotype Imaging Inc. All rights reserved.
+ *
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3b9b03");
+
+@font-face {
+  font-family: 'OptimaLTPro-DemiBold';
+  src: url('../webFonts/OptimaLTPro-DemiBold/font.woff2') format('woff2'), url('webFonts/OptimaLTPro-DemiBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'OptimaLTPro-Roman';
+  src: url('../webFonts/OptimaLTPro-Roman/font.woff2') format('woff2'), url('webFonts/OptimaLTPro-Roman/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'OptimaLTPro-Medium';
+  src: url('../webFonts/OptimaLTPro-Medium/font.woff2') format('woff2'), url('webFonts/OptimaLTPro-Medium/font.woff') format('woff');
+}

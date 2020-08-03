@@ -4,8 +4,10 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700|Work+Sans:200,300,400,500,600&display=swap" rel="stylesheet">
+      <link rel="icon" type="image/png" href="assets/images/Favicon/Best&Lloyd_Favicon-1.jpg"/>
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Muli:wght@200;300;400;500;600&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/optima.css">
       <link rel="stylesheet" href="css/base.css">
       <link rel="stylesheet" href="css/components.css">
       <link rel="stylesheet" href="css/layout.css">
@@ -26,60 +28,65 @@
 ------------------------------------------------------------------------------->
 <header class="header">
    <div class="header__top">
-      <div class="header-wrap">
+      <div class="header__wrap">
          <div class="header__links">
             <button class="header__link btn--hide" onclick="document.getElementById('modalLogin').style.display='block'">Clients</button>
-            <a class="header__link header--register view--fullscreen" href="register.html">Register</a>
+            <a class="header__link header--register" href="register.html">Register</a>
          </div>
-         <div class="header__logo">
-            <a href="index.html">
-               <img id="logoShrink" src="assets/svg/bestandlloyd.png" alt="Best&Lloyd Logo">
-            </a>
-         </div>
-         <div class="header__links ">
-            <a class="header__link header--findus view--fullscreen" href="findus.html">Find Us</a>
+         <a href="index.html">
+            <img class="header__logo" id="logoShrink" src="assets/svg/logo-3.svg" alt="Best&Lloyd Logo">
+         </a>
+         <div class="header__links">
+            <a class="header__link header--findus" href="findus.html">Find Us</a>
             <button class="header__link btn--hide" onclick="document.getElementById('modalSearch').style.display='block'">Search</button>
          </div>
       </div>
    </div>
-
-<!-- Navbar
-------------------------------------------------------------------------------->
    <div class="navbar">
-      <div class="navbar__left" style="opacity: 0;">
-      </div>
       <nav class="menu">
          <div class="menu__burger">
-            <input type="checkbox" class="toggler">
+            <input class="menu__toggler" type="checkbox">
             <div class="burger"><div></div></div>
          </div>
          <ul class="menu__list">
+            <li class="menu__search">
+               <section class="form__searchbox">
+                  <input class="form__input form__input--inline" type="text" placeholder="Search" name="search">
+                  <button class="btn btn--search" type="submit">
+                     <svg class="icon icon--search"><use href="#icon-search" xlink:href="#icon-search"></use></svg>
+                  </button>
+               </section>
+            </li>
             <li class="menu__item"><a class="menu__link" href="#">Products</a>
                <ul class="menu__sub-list">
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="product-page.html">New</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="all.html">All</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="table.html">Table</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="product-page.html">Product Page</a></li>
+                  <li class="test-bla">
+                     <a class="menu__sub-link" href="table.html">Table</a>
+                     <a class="menu__sub-link" href="table-2.html">Reduced</a>
+                     <a class="menu__sub-link" href="table-3.html">Grid</a>
+                  </li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="table.html">Table Grid </a></li>
+
                   <li class="menu__sub-item"><a class="menu__sub-link" href="wall.html">Wall</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="floor.html">Floor</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="pendant.html">Pendant</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="outdoor.html">Outdoor</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="tablesmirrors.html">Tables &amp; Mirrors</a></li>
-               </ul>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="#">Discover</a>
-               <ul class="menu__sub-list">
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="heritage.html">Heritage</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="ethos.html">Ethos</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="designers.html">Designers</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="info.html">Info</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="accessories.html">Accessories</a></li>
                </ul>
             </li>
             <li class="menu__item"><a class="menu__link" href="#">Custom</a>
                <ul class="menu__sub-list">
                   <li class="menu__sub-item"><a class="menu__sub-link" href="custom.html">Custom</a></li>
-                  <li class="menu__sub-item"><a class="menu__sub-link" href="custom.html#pg-finishes">Finishes</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="finishes.html">Finishes</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="shades.html">Shades</a></li>
                   <li class="menu__sub-item"><a class="menu__sub-link" href="schemeboard.html">Schemeboard</a></li>
+               </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Discover</a>
+               <ul class="menu__sub-list">
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="heritage.html">Heritage</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="designers.html">Designers</a></li>
+                  <li class="menu__sub-item"><a class="menu__sub-link" href="info.html">Info</a></li>
                </ul>
             </li>
             <li class="menu__item"><a class="menu__link" href="#">Latest</a>
@@ -94,14 +101,12 @@
          </ul>
       </nav>
       <div class="navbar__right">
-         <svg class="icon" onclick="document.getElementById('modalSearch').style.display='block'">
-            <use href="#icon-search" xlink:href="#icon-search"></use>
-         </svg>
+         <a class="navbar__schemeboard" href="schemeboard.html">Schemeboard</a>
+      </div>
+      <div class="navbar__left">
+         <a class="navbar__back" href="schemeboard.html">Back</a>
       </div>
    </div>
-
-<!-- Search/Login
-------------------------------------------------------------------------------->
    <div id="modalLogin" class="modal-bg">
       <div class="modal--login">
          <div class="modal__close" onclick="document.getElementById('modalLogin').style.display='none'">
@@ -109,12 +114,12 @@
          </div>
          <form class="form form--dark" action="*">
             <label class="form__label" for="uname">Username</label>
-            <input class="form__input" type="text" placeholder="Enter Username" name="uname" required>
-            <label class="form__label" for="psw">Password</label>
-            <input class="form__input" type="password" placeholder="Enter Password" name="psw" required>
+            <input class="form__input"  type="text" name="uname" required>
+            <label class="form__label"  for="psw">Password</label>
+            <input class="form__input" type="password"  name="psw" required>
             <button class="btn btn--form" type="submit">Login</button>
             <label class="form__checkbox">
-              <input type="checkbox" style="margin-top: 1.5rem;" checked="checked" name="remember">
+              <input type="checkbox" checked="checked" name="remember">
               <p class="form__checkbox__txt">Remember me</p>
             </label>
          </form>
@@ -128,9 +133,9 @@
          <form class="form form--dark" action="*">
             <label class="form__label" for="psw">Search</label>
             <div class="form__searchbox">
-               <input class="form__input form__input--inline" type="text" placeholder="Search" name="search">
+               <input class="form__input form__input--inline" type="text"  name="search">
                <button class="btn btn--form" type="submit">
-                  <svg class="icon"><use href="#icon-search" xlink:href="#icon-search"></use></svg>
+                  <svg class="icon icon--gold"><use href="#icon-search" xlink:href="#icon-search"></use></svg>
                </button>
             </div>
          </form>
@@ -138,29 +143,233 @@
    </div>
 </header>
 
-<!-- Main Start / Hero
+<!-- Hero
 ------------------------------------------------------------------------------->
    <main class="main main--hero" id="main">
-      <div class="hero">
-         <img class="hero__img" src="assets/images/test/test_1.jpg" alt="">
+   <div class="hero">
+      <div class="heroSlides hero__box__fade">
+         <img class="hero__slider__img" src="assets/images/bl_Hero_5.jpg">
+         <div class="hero__slider__inner">
+
+            <div class="hero__box hero__box--1">
+               <p class="hero__box-intro">This is top intro text for hero</p>
+               <h1 class="hero__box-headline">The Baldwin Guggisberg</h1>
+               <p>Find out <a class="inline-link" href="custom.html">more</a></p>
+            </div>
+
+         </div>
       </div>
-      <hr class="devider">
+      <div class="heroSlides hero__box__fade">
+         <div class="hero__slider__inner">
 
-      <article class="wrap">
-         <h1 class="page__heading">New Products</h1>
+            <div class="hero__box hero__box--2">
+               <p class="hero__box-intro">This is top intro text for hero</p>
+               <h1 class="hero__box-headline">The Baldwin Guggisberg</h1>
+               <p>Find out <a class="inline-link" href="custom.html">more</a></p>
+            </div>
 
+         </div>
+         <img class="hero__slider__img" src="assets/images/bl_Hero_4.jpg">
+      </div>
+      <div class="heroSlides fade">
+         <div class="hero__slider__inner">
+            <div class="hero__box hero__box--3">
+               <p class="hero__box-intro">This is top intro text for hero</p>
+               <h1 class="hero__box-headline">The Baldwin Guggisberg</h1>
+               <p>Find out <a class="inline-link" href="custom.html">more</a></p>
+            </div>
+         </div>
+         <img class="hero__slider__img" src="assets/images/bl_Hero_1.jpg">
+      </div>
+      <div class="hero__slider__dots">
+         <span class="hero__slider__dot"></span>
+         <span class="hero__slider__dot"></span>
+         <span class="hero__slider__dot"></span>
+      </div>
+   </div>
+
+
+
+<!-- Click Throughs
+------------------------------------------------------------------------------->
+      <div class="devider"></div>
+
+      <article class="row slider wrap--md">
+
+         <!-- Slide 1 -->
+         <div class="mySlides">
+            <h2 class="slider__heading heading">Tailored Design </h2>
+            <p class="headline">Full customisation of any design to fit any demanding scheme</p>
+            <p class="text slider__text slider-fade">Locccrem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quas placeat magnam error temporibus est fugit saepe expedita dolorum rerum, nam mollitia repudiandae accusamus, a quos laborum id totam nulla sint vitae optio ea facere.</p>
+            <div class="slider__link"><a class="link" href="custom.html">Read More</a></div>
+         </div>
+
+         <!-- Slide 2 -->
+         <div class="mySlides">
+            <h2 class="slider__heading slider__heading__img heading">Creation</h2>
+            <img class="slider__img img--border" src="assets/images/bl_Creation-2.jpg" alt="">
+            <div class="slider__link">
+               <a class="link" href="creation.html">The Making of a Baldwin Guggisberg</a>
+            </div>
+         </div>
+
+         <!-- Slide 3 -->
+         <div class="mySlides">
+            <h2 class="slider__heading heading">Design Worshop</h2>
+            <p class="headline">
+               Modern &amp forward thinking design since 1840
+            </p>
+            <p class="text slider__text slider-fade">
+               Locccrem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quas placeat magnam error temporibus est
+               fugit saepe expedita dolorum rerum, nam mollitia repudiandae accusamus, a quos laborum id totam nulla sint vitae optio ea facere.
+            </p>
+            <div class="slider__link">
+               <a class="link" href="custom.html">Read More</a>
+            </div>
+         </div>
+
+         <!-- Arrows -->
+         <div class="slider__arrows slider__arrows--top">
+            <a class="slide-prev" onclick="plusSlides(-1)"><svg class="slider__icon--lg"><use href="#icon-previous" xlink:href="#icon-previous"></use></svg></a>
+            <a class="slide-next" onclick="plusSlides(1)"><svg class="slider__icon--lg"><use href="#icon-next" xlink:href="#icon-next"></use></svg></a>
+         </div>
       </article>
-      <div id="back2Top"><svg class="icon"><use href="#icon-up" xlink:href="#icon-up"></use></svg></div>
+
+
+<!-- Section - Collection 2020
+------------------------------------------------------------------------------->
+      <div class="devider"></div>
+
+      <article class="row">
+         <h2 class="row_heading heading">Collection 2020</h2>
+
+         <section class="grid-box-links wrap--wide">
+            <div class="box-link">
+               <div class="box-link__inner">
+                  <div class="box-link__box">
+                     <a href="" class="link">Table</a>
+                  </div>
+               </div>
+               <img class="box-link__img" src="assets/images/Products_Table.jpg" alt="" >
+            </div>
+            <div class="box-link">
+               <div class="box-link__inner">
+                  <div class="box-link__box">
+                     <a href="" class="link">Wall</a>
+                  </div>
+               </div>
+               <img class="box-link__img" src="assets/images/Products_Wall.jpg" alt="" >
+            </div>
+            <div class="box-link">
+               <div class="box-link__inner">
+                  <div class="box-link__box">
+                     <a href="" class="link">Floor</a>
+                  </div>
+               </div>
+               <img class="box-link__img" src="assets/images/Products_Floor.jpg" alt="" >
+            </div>
+            <div class="box-link">
+               <div class="box-link__inner">
+                  <div class="box-link__box">
+                     <a href="" class="link">Pendant</a>
+                  </div>
+               </div>
+               <img class="box-link__img" src="assets/images/Products_Pendant.jpg" alt="" >
+            </div>
+            <div class="box-link">
+               <div class="box-link__inner">
+                  <div class="box-link__box">
+                     <a href="" class="link">Tables &amp; Mirrors</a>
+                  </div>
+               </div>
+               <img class="box-link__img" src="assets/images/Products_TablesMirrors.jpg" alt="" >
+            </div>
+            <div class="box-link">
+               <div class="box-link__inner">
+                  <div class="box-link__box">
+                     <a href="" class="link">Accessories</a>
+                  </div>
+               </div>
+               <img class="box-link__img" src="assets/images/Products_Accessories.jpg" alt="" >
+            </div>
+         </section>
+      </article>
    </main>
 
-<!-- Footer -->
+
+<!-- Footer
+------------------------------------------------------------------------------->
+   <div w3-include-html="includes/site-smedia-links.html"></div>
    <div w3-include-html="includes/site-footer.html"></div>
 
 
-<!-- + + + + + + + + + scripts + + + + + + + + +  -->
+
+<!-- Scripts
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +-->
+
 
 <!-- HTML Include -->
 <script> includeHTML(); </script>
+
+<script>
+   var slideIndex = 0;
+   showSlides();
+
+   function showSlides() {
+     var i;
+     var slides = document.getElementsByClassName("heroSlides");
+     var dots = document.getElementsByClassName("hero__slider__dot");
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+     }
+     slideIndex++;
+     if (slideIndex > slides.length) {slideIndex = 1}
+     for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" hero__slider__dot--active", "");
+     }
+     slides[slideIndex-1].style.display = "block";
+     dots[slideIndex-1].className += " hero__slider__dot--active";
+     setTimeout(showSlides, 2000); // Change image every 2 seconds
+   }
+</script>
+
+
+<script>
+   var slideIndex = 1; showSlides(slideIndex);
+   function plusSlides(n) { showSlides(slideIndex += n);}
+   function currentSlide(n) { showSlides(slideIndex = n);}
+   function showSlides(n) {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("slider-dot");
+     if (n > slides.length) {slideIndex = 1}
+     if (n < 1) {slideIndex = slides.length}
+     for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none"; }
+     for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" slider-dot-active", "");}
+     slides[slideIndex-1].style.display = "block";
+     dots[slideIndex-1].className += " slider-dot-active";}
+</script>
+
+
+<!-- Header Shrink -->
+<script type="text/javascript">
+   window.onscroll = function() {
+      scrollFunction()
+   };
+   function scrollFunction() {
+      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+         document.getElementById("logoShrink").style.width = "230px";
+         document.getElementById("logoShrink").style.margin = "17px 0px";
+         document.getElementById("navShrinkTabletPlus").style.padding = "10px 0px";
+      } else {
+         document.getElementById("logoShrink").style.width = "242px";
+         document.getElementById("logoShrink").style.margin = "26px 0px";
+         document.getElementById("navShrinkTabletPlus").style.padding = "12px 0px";
+      } }
+</script>
+
 
 <!-- Modal search -->
 <script>
@@ -173,7 +382,8 @@
    }
 </script>
 
-<!-- Modal login  -->
+
+<!-- Modal login -->
 <script>
    var modal = document.getElementById('modalLogin');
    // When the user clicks anywhere outside of the modal, close it
@@ -197,21 +407,6 @@ function closeNavbarNav() {
 </script>
 
 
-<!-- Header Shrink--->
-<script type="text/javascript">
-   window.onscroll = function() {
-      scrollFunction()
-   };
-   function scrollFunction() {
-      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-         document.getElementById("logoShrink").style.margin = "14px 0px";
-         document.getElementById("navShrinkTabletPlus").style.padding = "10px 0px";
-      } else {
-         document.getElementById("logoShrink").style.margin = "28px 0px";
-         document.getElementById("navShrinkTabletPlus").style.padding = "12px 0px";
-      } }
-</script>
-
 
 <!-- Headerbar Navigation--->
 <script>
@@ -232,40 +427,6 @@ function closeNavbarNav() {
               $('ul').removeAttr('style'); }});
 </script>
 
-
-<!-- See More Button -->
-<script>
-function myFunction() {
-  var dots = document.getElementById("viewMoreDots");
-  var moreText = document.getElementById("viewMoreTxt");
-  var btnText = document.getElementById("viewMoreBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  } }
-</script>
-
-
-<!-- Scroll 2 Top -->
-<script type="text/javascript">
-   $(window).scroll(function() {
-      var height = $(window).scrollTop();
-      if (height > 200) {$('#back2Top').fadeIn();} else {
-         $('#back2Top').fadeOut();} });
-   $(document).ready(function() {
-      $("#back2Top").click(function(event) {
-         event.preventDefault();
-         $("html, body").animate({
-            scrollTop: 0
-         }, "slow");
-         return false; }); });
-</script>
 
 </body>
 </html>
